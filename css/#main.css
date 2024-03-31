@@ -1,5 +1,7 @@
-*body{
 
+body {
+    margin: 0;
+    font-family: 'Sacramento';
 }
 
 Pbody{
@@ -38,7 +40,6 @@ p{
 .rootFont p{
     font-family: 'Porter Sans Block';
     font-size: 20px;
-    font-color: rgb(255, 1, 1);
 }
 
 .backgroundImage{
@@ -61,4 +62,56 @@ p{
     width: 607px;
     height: 700px;
     text-align: center;
+}
+
+.flexFlightItem1 p1{
+    width: 30%;
+    height: 50%;
+    padding: 10px;
+    text-align: center;
+    background-color: #ffffff;
+    border-radius: 20%;
+    color: #0035f6;
+}
+
+.flexFlightItem3{
+    max-height: 88%;
+    font-size: 20px;
+    margin: 10px;
+}
+
+.flexFlightContainer5{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    align-content: center;
+    margin: 40px;
+}
+
+.flexFlightItem5{
+    flex:50%;
+}
+
+.flexFlightItem5 img{
+    width: 50%;
+}
+
+.flexFlightContainer6{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    align-content: center;
+}
+
+.flexFlightItem6{
+    flex: 50%;
+}
+
+.flexFlightContainer10{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
 }
