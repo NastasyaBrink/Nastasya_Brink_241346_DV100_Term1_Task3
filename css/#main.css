@@ -16,6 +16,7 @@ body {
     padding: 14px 16px;
     text-decoration: none;
     font-size: 17px;
+    border-radius: 30%;
 }
 
 .topNavRight {
@@ -35,6 +36,9 @@ body {
 .flexHomeContainer1{
     display: flex;
     width: 100%;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
 }
 
 .backgroundImage1{
@@ -57,14 +61,41 @@ body {
 }
 
 .flexHomeContainer2{
+    display: flex;
+    width: 50%;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
     background-color: #000000;
-
 }
-p {
+
+.flexHomeItem1{
+    width: 609px;
+    height:  649px;
+    text-align: left;
+    margin: 50px;
+}
+
+.flexHomeContainer3{
+    display: flex;
+    width: 50%;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    background-color: #000000;
+}
+
+.text{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 16px;
     color: #0040ff;
-    text-align: justify;
+    text-align: right;
+    letter-spacing: 0px;
+    margin-right: 20px;
+    padding-left: 2em;
+    padding-right: 2em;
 }
 
 .h4{
@@ -88,20 +119,82 @@ p {
     margin-right: 20px;
 }
 
-.text{
+p{
     font-family: 'Sacramento', cursive;
     font-size: 16px;
     color: #ff0000;
     text-align: right;
     text-align: right;
-    text-transform: uppercase;
     letter-spacing: 0px;
     margin-right: 20px;
     padding-left: 2em;
     padding-right: 2em;
 }
 
-Pbody{
+.button {
+    background-color: #7ab4c7;
+    border: none;
+    color: rgb(255, 0, 0);
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+  }
+
+.flexHomeContainer4{
+    display: flex;
+    width: 50%;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    background-color: #000000;
+}
+
+.flexHomeContainer5{
+    display: flex;
+    width: 50%;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    justify-content: space-evenly;
+    background-color: #000000;
+}
+
+.flexHomeItem2{
+    width: 609px;
+    height:  649px;
+    text-align: left;
+    margin: 50px;
+}
+
+.flexHomeContainer6{
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    background-color: #000000;
+}
+
+.image-row{
+
+}
+
+.button {
+    background-color: #7ab4c7;
+    border: none;
+    color: rgb(255, 0, 0);
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+  }
+
+Pbody{ /*this is the form*/
     margin: 0;
 }
 
@@ -158,8 +251,8 @@ p{
 .formContainer{
     width: 607px;
     height: 700px;
-    text-align: center;
-}
+    text-align: center; 
+} /*the form ends here*/
 
 .flexFlightItem1 p1{
     width: 30%;
