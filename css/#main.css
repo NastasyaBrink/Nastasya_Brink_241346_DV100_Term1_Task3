@@ -1,9 +1,22 @@
 
 body {
     margin: 0;
-    font-family: 'Sacramento', cursive;
+    font-family: 'C:\Users\brink\Documents\GitHub\Nastasya_Brink_241346_DV100_Term1_Task3\assests\Red Planet Ventures\Red Planet Ventures\Assets\Fonts\Poppins\Poppins-Bold.ttf', sans-serif;
 }
-
+  
+  .poppins-medium {
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+  }
+  
+  .poppins-bold {
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+  }
+  
+  
 .topNav{
     overflow: hidden;
     background-color: #7ab4c7;
@@ -11,12 +24,12 @@ body {
 
 .topNav a{
     float: left;
-    color: white;
+    color: rgb(255, 0, 0);
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
     font-size: 17px;
-    border-radius: 30%;
+    border-radius: 12px;
 }
 
 .topNavRight {
@@ -45,12 +58,15 @@ body {
     width: 100%;
     align-items: center; /*The background image is not the full width of the page*/
 }
+
 .main-headingHome{
         max-width: 607px;
         text-align: center;
         margin: auto;
         font-size: 48px;
-        font-family: 'Montserat', sans-serif;
+        font-family: 'Poppins', sans-serif;
+        font-weight: 700;
+        font-style: normal;
 }
       
 .SubheadingHome{
@@ -99,7 +115,7 @@ body {
 }
 
 .h4{
-    font-family: 'Sacramento', cursive;
+    font-family: 'Poppins', sans-serif;
     font-size: 16px;
     color: #00f7ff;
     text-align: right;
@@ -109,7 +125,7 @@ body {
 }
 
 .h3{
-    font-family: 'Sacramento', cursive;
+    font-family: 'Poppins', sans-serif;
     font-size: 16px;
     color: #ffffff;
     text-align: right;
@@ -120,7 +136,7 @@ body {
 }
 
 p{
-    font-family: 'Sacramento', cursive;
+    font-family: 'Poppins', sans-serif;
     font-size: 16px;
     color: #ff0000;
     text-align: right;
@@ -132,14 +148,16 @@ p{
 }
 
 .button {
-    background-color: #7ab4c7;
-    border: none;
-    color: rgb(255, 0, 0);
-    padding: 15px 32px;
+    background-color: #ff0000;
+    color: #ffffff;
+    padding: 270px, 70px;
+    border-width: 270px, 70px;
+    border-radius: 12px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    font-size: 16px;
+    font-size: 20px;
+    font-family: 'Poppins', semi-bold;
   }
 
 .flexHomeContainer4{
@@ -179,20 +197,50 @@ p{
     background-color: #000000;
 }
 
-.image-row{
-
-}
+.row {
+    display: flex;
+  }
+  
+  .column {
+    flex: 25%;
+    padding: 5px;
+  }
 
 .button {
-    background-color: #7ab4c7;
-    border: none;
-    color: rgb(255, 0, 0);
-    padding: 15px 32px;
+    background-color: #ff0000;
+    color: #ffffff;
+    padding: 270px, 70px;
+    border-width: 270px, 70px;
+    border-radius: 12px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    font-size: 16px;
+    font-size: 20px;
+    font-family: 'Poppins', semi-bold;
   }
+
+/*Contact Page starts here..............................................................................................................................*/
+
+.flexContactContainer1{
+        display: flex;
+        width: 100%;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+
+    }
+.backgroundImage2{
+    width: 100%;
+    align-items: center; /*The background image is not the full width of the page*/
+}
+
+.main-headingHome{
+    max-width: 607px;
+    text-align: center;
+    margin: auto;
+    font-size: 48px;
+    font-family: 'Poppins', sans-serif;
+}
 
 Pbody{ /*this is the form*/
     margin: 0;
@@ -201,7 +249,7 @@ Pbody{ /*this is the form*/
 h1{
     color: #000000;
     text-align: center;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Poppins', sans-serif;
     font-weight: 400;
     font-style: normal;
 }
@@ -209,14 +257,14 @@ h1{
 h2{
     color: #000000;
     text-align: center;
-    font-family: 'Sacramento', cursive;
+    font-family: 'Poppins', sans-serif;
     font-weight: 400;
     font-style: normal;
 }
 
 
 p{
-    font-family: 'Sacramento', cursive;
+    font-family: 'Poppins', sans-serif;
     font-weight: 400;
     font-style: normal;
     margin: 607px;
@@ -254,7 +302,30 @@ p{
     text-align: center; 
 } /*the form ends here*/
 
-.flexFlightItem1 p1{
+/*Flight page starts here..............................................................................................................................*/
+
+.flexContactContainer1{
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+}
+.backgroundImage2{
+width: 100%;
+align-items: center; /*The background image is not the full width of the page*/
+}
+
+.main-headingHome{
+max-width: 607px;
+text-align: center;
+margin: auto;
+font-size: 48px;
+font-family: 'Poppins', sans-serif;
+}
+
+.flexFlightItem p1{
     width: 30%;
     height: 50%;
     padding: 10px;
@@ -264,11 +335,49 @@ p{
     color: #0035f6;
 }
 
+.flexFlightItem1{
+    flex:50%;
+}
+
+.flexFlightItem1 img{
+    width: 50%;
+    margin-left: 20px;
+}
+
+.flexFlightItem2{
+    flex:50%;
+}
+
+.flexFlightItem2 img{
+    width: 50%;
+    margin-left: 20px;
+}
+
+
+.flexFlightItem3{
+    flex:50%;
+}
+
+.flexFlightItem3 img{
+    width: 50%;
+    margin-left: 20px;
+}
+
 .flexFlightItem3{
     max-height: 88%;
     font-size: 20px;
     margin: 10px;
 }
+
+.flexFlightItem4{
+    flex:50%;
+}
+
+.flexFlightItem4 img{
+    width: 50%;
+    margin-left: 20px;
+}
+
 
 .flexFlightContainer5{
     display: flex;
@@ -285,6 +394,7 @@ p{
 
 .flexFlightItem5 img{
     width: 50%;
+    margin-left: 20px;
 }
 
 .flexFlightContainer6{
@@ -296,8 +406,14 @@ p{
 }
 
 .flexFlightItem6{
-    flex: 50%;
+    flex:50%;
 }
+
+.flexFlightItem6 img{
+    width: 50%;
+    margin-left: 20px;
+}
+
 
 .flexFlightContainer10{
     display: flex;
