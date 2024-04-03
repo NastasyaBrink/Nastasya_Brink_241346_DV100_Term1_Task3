@@ -4,22 +4,23 @@ body {
     font-family: 'Poppins', sans-serif;
 }
 
-  
-.topNav{
+/*navigation bar */  
+.topNav{ 
     overflow: hidden;
     background-color: #7ab4c7;
     margin-top: 10px;
     border-radius: 30px;
 }
 
+/* links inside the navigation bar */
 .topNav a{
     float: left;
+    display: block;
     color: rgb(255, 0, 0);
     text-align: center;
     padding: 20px 48px;
     text-decoration: none;
     font-size: 17px;
-    border-radius: 12px;
 }
 
 .topNav img{
@@ -27,19 +28,31 @@ body {
     padding: 266px 48px;
 }
 
-.topNavRight {
-    float: right;
+.topNavCenter {
+    float: center;
 }
 
-.topNav a:Hover {
+/* Change the color of links on hover */
+.topNav a:hover {
     background-color: #ddd;
     color: black;
 }
 
+/* "active" element to highlight the current page */
 .topNav a.active {
     background-color: #dfcd58;
     color: white;
 }
+
+/* search box inside the navigation bar */
+.topnav input[type=text] {
+    float: right;
+    padding: 6px;
+    border: none;
+    margin-top: 8px;
+    margin-right: 16px;
+    font-size: 17px;
+  }
 
 .flexHomeContainer1{
     display: flex;
@@ -145,14 +158,14 @@ p{
     background-color: #ff0000;
     color: #ffffff;
     padding: 270px, 70px;
-    border-width: 270px, 70px;
+    width: 270px, 70px;
     border-radius: 12px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
     font-size: 20px;
     font-family: 'Poppins', sans-serif;
-  }
+}
 
 .flexHomeContainer4{
     display: flex;
@@ -193,25 +206,25 @@ p{
 
 .row {
     display: flex;
-  }
+}
   
   .column {
     flex: 25%;
     padding: 5px;
-  }
+}
 
 .button2 {
     background-color: #ff0000;
     color: #ffffff;
     padding: 270px, 70px;
-    border-width: 270px, 70px;
+    width: 270px, 70px;
     border-radius: 12px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
     font-size: 20px;
     font-family: 'Poppins', sans-serif;
-  }
+}
 
 /*Contact Page starts here..............................................................................................................................*/
 
@@ -221,8 +234,8 @@ p{
         flex-direction: row;
         align-items: center;
         justify-content: center;
+}
 
-    }
 .backgroundImage2{
     width: 100%;
     align-items: center; /*The background image is not the full width of the page*/
@@ -332,24 +345,73 @@ h6{
     background-color: #ff0000;
     color: #ffffff;
     padding: 270px, 70px;
-    border-width: 270px, 70px;
+    width: 270px, 70px;
     border-radius: 12px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
     font-size: 20px;
     font-family: 'Poppins', sans-serif;
-} /*the form ends here*/
+}
+/*the form ends here*/
 
 /*Flight page starts here..............................................................................................................................*/
 
-.flexFlightContainer{
+.flexHeaderContainer1{
     display: flex;
     width: 100%;
     flex-direction: row;
     align-items: center;
     justify-content: center;
+}
 
+.flexHeaderContainer2{
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.flexbox1{
+    display: flex;
+    width: 50%;
+}
+
+.vl {
+    border-left: 6px solid green;
+    height: 500px;
+    position: absolute;
+    left: 50%;
+    margin-left: -3px;
+    top: 0;
+}
+
+.flexbox2 {
+    display: flex;
+    width: 50%;
+}
+
+#Show {
+    background-image: url('/css/search_icon.png'); /* Add a search icon to input */
+    background-position: 10px 12px; /* Position the search icon */
+    background-repeat: no-repeat; /* Do not repeat the icon image */
+    width: 100%; /* Full-width */
+    font-size: 16px; /* Increase font-size */
+    padding: 12px 20px 12px 40px; /* Add some padding */
+    border: 1px solid #ddd; /* Add a grey border */
+    margin-bottom: 12px; /* Add some space below the input */
+}
+
+#Sort_by {
+    background-image: url('/css/search_icon.png'); /* Add a search icon to input */
+    background-position: 10px 12px; /* Position the search icon */
+    background-repeat: no-repeat; /* Do not repeat the icon image */
+    width: 100%; /* Full-width */
+    font-size: 16px; /* Increase font-size */
+    padding: 12px 20px 12px 40px; /* Add some padding */
+    border: 1px solid #ddd; /* Add a grey border */
+    margin-bottom: 12px; /* Add some space below the input */
 }
 
 .flexFlightItem p1{
@@ -368,12 +430,42 @@ h6{
     flex-direction: row;
     align-items: center;
     justify-content: center;
+}
 
+.checked {
+    color: orange;
+  }
+
+.vl {
+    border-left: 6px solid green;
+    height: 500px;
+    position: absolute;
+    left: 50%;
+    margin-left: -3px;
+    top: 0;
 }
 
 .flexFlightItem1 img{
     width: 350px;
     margin-left: 20px;
+}
+
+.button3 {
+    background-color: #ff0000;
+    color: #ffffff;
+    padding: 270px, 70px;
+    width: 270px, 70px;
+    border-radius: 12px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* divider line */
+hr.solid {
+    border-top: 3px solid #bbb;
 }
 
 .flexFlightContainer2{
@@ -382,12 +474,42 @@ h6{
     flex-direction: row;
     align-items: center;
     justify-content: center;
+}
 
+.checked {
+    color: orange;
+}
+
+.vl {
+    border-left: 6px solid green;
+    height: 500px;
+    position: absolute;
+    left: 50%;
+    margin-left: -3px;
+    top: 0;
 }
 
 .flexFlightItem2 img{
     width: 350px;
     margin-left: 20px;
+}
+
+.button4 {
+    background-color: #ff0000;
+    color: #ffffff;
+    padding: 270px, 70px;
+    width: 270px, 70px;
+    border-radius: 12px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* divider line */
+hr.solid {
+    border-top: 3px solid #bbb;
 }
 
 .flexFlightContainer3{
@@ -396,12 +518,41 @@ h6{
     flex-direction: row;
     align-items: center;
     justify-content: center;
+}
 
+.checked {
+    color: orange;
+}
+
+.vl {
+    border-left: 6px solid green;
+    height: 500px;
+    position: absolute;
+    left: 50%;
+    margin-left: -3px;
+    top: 0;
 }
 
 .flexFlightItem3 img{
     width: 350px;
     margin-left: 20px;
+}
+
+.button5 {
+    background-color: #ff0000;
+    color: #ffffff;
+    padding: 270px, 70px;
+    width: 270px, 70px;
+    border-radius: 12px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    font-family: 'Poppins', sans-serif;
+}
+/* divider line */
+hr.solid {
+    border-top: 3px solid #bbb;
 }
 
 .flexFlightContainer4{
@@ -410,12 +561,41 @@ h6{
     flex-direction: row;
     align-items: center;
     justify-content: center;
+}
 
+.checked {
+    color: orange;
+}
+
+.vl {
+    border-left: 6px solid green;
+    height: 500px;
+    position: absolute;
+    left: 50%;
+    margin-left: -3px;
+    top: 0;
 }
 
 .flexFlightItem4 img{
     width: 350px;
     margin-left: 20px;
+}
+
+.button6 {
+    background-color: #ff0000;
+    color: #ffffff;
+    padding: 270px, 70px;
+    width: 270px, 70px;
+    border-radius: 12px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    font-family: 'Poppins', sans-serif;
+}
+/* divider line */
+hr.solid {
+    border-top: 3px solid #bbb;
 }
 
 .flexFlightContainer5{
@@ -424,12 +604,41 @@ h6{
     flex-direction: row;
     align-items: center;
     justify-content: center;
+}
 
+.checked {
+    color: orange;
+}
+
+.vl {
+    border-left: 6px solid green;
+    height: 500px;
+    position: absolute;
+    left: 50%;
+    margin-left: -3px;
+    top: 0;
 }
 
 .flexFlightItem5 img{
     width: 350px;
     margin-left: 20px;
+}
+
+.button7 {
+    background-color: #ff0000;
+    color: #ffffff;
+    padding: 270px, 70px;
+    width: 270px, 70px;
+    border-radius: 12px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    font-family: 'Poppins', sans-serif;
+}
+/* divider line */
+hr.solid {
+    border-top: 3px solid #bbb;
 }
 
 .flexFlightContainer6{
@@ -438,12 +647,54 @@ h6{
     flex-direction: row;
     align-items: center;
     justify-content: center;
+}
 
+.checked {
+    color: orange;
+}
+
+.vl {
+    border-left: 6px solid green;
+    height: 500px;
+    position: absolute;
+    left: 50%;
+    margin-left: -3px;
+    top: 0;
 }
 
 .flexFlightItem6 img{
     width: 350px;
     margin-left: 20px;
+}
+
+.button8 {
+    background-color: #ff0000;
+    color: #ffffff;
+    padding: 270px, 70px;
+    width: 270px, 70px;
+    border-radius: 12px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    font-family: 'Poppins', sans-serif;
+}
+/* divider line */
+hr.solid {
+    border-top: 3px solid #bbb;
+}
+
+.button9 {
+    background-color: #c20000;
+    color: #ffffff;
+    padding: 270px, 70px;
+    width: 270px, 70px;
+    border-radius: 12px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    font-family: 'Poppins', sans-serif;
 }
 
 .flexFooterContainer1{
@@ -486,4 +737,20 @@ h6{
 .flexFooterItem5{
     flex-direction: column;
     width: 77px, 77px;
+}
+
+.flexFooterContainer4{
+    flex: auto;
+    flex-direction: row;
+    width: auto;
+}
+
+.flexFooterItem6{
+    flex-direction: column;
+    float: left;
+}
+
+.flexFooterItem7{
+    flex-direction: column;
+    float: right;
 }
