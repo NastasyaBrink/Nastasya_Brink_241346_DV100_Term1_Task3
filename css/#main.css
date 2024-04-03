@@ -81,7 +81,7 @@ h2{
     background-color: #ff0000;
 }
 
-.flexHomeItem1{
+.flexHomeItem1 img{
     width: 609px;
     height:  649px;
     text-align: left;
@@ -174,7 +174,7 @@ p{
     background-color: #000000;
 }
 
-.flexHomeItem2{
+.flexHomeItem2 img{
     width: 609px;
     height:  649px;
     text-align: left;
@@ -215,7 +215,7 @@ p{
 
 /*Contact Page starts here..............................................................................................................................*/
 
-.flexContactContainer1{
+.flexContactContainer{
         display: flex;
         width: 100%;
         flex-direction: row;
@@ -228,7 +228,7 @@ p{
     align-items: center; /*The background image is not the full width of the page*/
 }
 
-.main-headingHome{
+.main-heading{
     max-width: 607px;
     text-align: center;
     margin: auto;
@@ -236,8 +236,8 @@ p{
     font-family: 'Poppins', sans-serif;
 }
 
-Body{ /*this is the form*/
-    margin: 0;
+.rootFont{
+    font-family: 'Poppins', sans-serif;
 }
 
 h5{
@@ -256,6 +256,46 @@ h6{
     font-style: normal;
 }
 
+.flexContactContainer1{
+    display: flex;
+}
+
+.flexContactItem1{
+    width: 350px;
+}
+
+.flexContactContainer2{
+    display: flex;
+}
+
+.flexContactItem2{
+    width: 350px;
+}
+
+.flexContactContainer3{
+    display: flex;
+}
+
+.flexContactItem3{
+    width: 350px;
+}
+
+.flexContactContainer4{
+    display: flex;
+}
+
+.flexContactItem4{
+    width: 350px;
+}
+
+.flexContactContainer5{
+    display: flex;
+}
+
+.flexContactItem5{
+    width: 350px;
+}
+
 @font-face{
     font-family: 'Porter Sans Block';
     src: url(../assets/Fonts/porter-sans-inline-block-web_font.woff) format("woff");
@@ -266,7 +306,7 @@ h6{
     font-size: 20px;
 }
 
-.backgroundImage{
+.backgroundImage3 {
     width: 607px;
     height: 700px;
     text-align: center;
@@ -276,7 +316,7 @@ h6{
     color: #ffffff;
 }
 
-.flexContainer{
+.flexRight{
     display: flex;
     width: 607px;
     height: 700px;
@@ -303,25 +343,13 @@ h6{
 
 /*Flight page starts here..............................................................................................................................*/
 
-.flexContactContainer1{
+.flexFlightContainer{
     display: flex;
     width: 100%;
     flex-direction: row;
     align-items: center;
     justify-content: center;
 
-}
-.backgroundImage2{
-width: 100%;
-align-items: center; /*The background image is not the full width of the page*/
-}
-
-.main-headingHome{
-max-width: 607px;
-text-align: center;
-margin: auto;
-font-size: 48px;
-font-family: 'Poppins', sans-serif;
 }
 
 .flexFlightItem p1{
@@ -334,82 +362,87 @@ font-family: 'Poppins', sans-serif;
     color: #0035f6;
 }
 
-.flexFlightItem1{
-    flex:50%;
+.flexFlightContainer1{
+    display: flex;
+    width: 50%;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
 }
 
 .flexFlightItem1 img{
-    width: 50%;
+    width: 350px;
     margin-left: 20px;
 }
 
-.flexFlightItem2{
-    flex:50%;
+.flexFlightContainer2{
+    display: flex;
+    width: 50%;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
 }
 
 .flexFlightItem2 img{
-    width: 50%;
+    width: 350px;
     margin-left: 20px;
 }
 
+.flexFlightContainer3{
+    display: flex;
+    width: 50%;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
 
-.flexFlightItem3{
-    flex:50%;
 }
 
 .flexFlightItem3 img{
-    width: 50%;
+    width: 350px;
     margin-left: 20px;
 }
 
-.flexFlightItem3{
-    max-height: 88%;
-    font-size: 20px;
-    margin: 10px;
-}
+.flexFlightContainer4{
+    display: flex;
+    width: 50%;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
 
-.flexFlightItem4{
-    flex:50%;
 }
 
 .flexFlightItem4 img{
-    width: 50%;
+    width: 350px;
     margin-left: 20px;
 }
 
-
 .flexFlightContainer5{
     display: flex;
+    width: 50%;
     flex-direction: row;
     align-items: center;
-    justify-content: space-around;
-    align-content: center;
-    margin: 40px;
-}
+    justify-content: center;
 
-.flexFlightItem5{
-    flex:50%;
 }
 
 .flexFlightItem5 img{
-    width: 50%;
+    width: 350px;
     margin-left: 20px;
 }
 
 .flexFlightContainer6{
     display: flex;
-    flex-direction: column;
-    align-items: flex-start;
+    width: 50%;
+    flex-direction: row;
+    align-items: center;
     justify-content: center;
-    align-content: center;
-}
 
-.flexFlightItem6{
-    flex:50%;
 }
 
 .flexFlightItem6 img{
-    width: 50%;
+    width: 350px;
     margin-left: 20px;
 }
 
