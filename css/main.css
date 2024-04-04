@@ -2,6 +2,7 @@
 body {
     margin: 0;
     font-family: 'Poppins', sans-serif;
+    width: 100%;
 }
 
 /*navigation bar */  
@@ -9,6 +10,7 @@ body {
     overflow: hidden;
     background-color: #7ab4c7;
     margin-top: 10px;
+    padding: 15px;
     border-radius: 30px;
 }
 
@@ -25,7 +27,7 @@ body {
 
 .topNav img{
     float: left;
-    padding: 266px 48px;
+    padding: 26px 48px;
 }
 
 .topNavCenter {
@@ -62,9 +64,12 @@ body {
     justify-content: center;
 }
 
-.backgroundImage1{
+.flexHomeContainer1{
     width: 100%;
-    align-items: center; /*The background image is not the full width of the page*/
+    align-items: center; 
+    background-image: url(../assets/RedPlanetVentures/RedPlanetVentures/Assets/Images/homePageHeader.png);
+    background-size: cover;
+    height: 350px;
 }
 
 h1{
@@ -147,7 +152,7 @@ p{
     font-family: 'Poppins', sans-serif;
     font-size: 16px;
     color: #ff0000;
-    text-align: right;
+    text-align: center;
     letter-spacing: 0px;
     margin-right: 20px;
     padding-left: 2em;
@@ -236,9 +241,12 @@ p{
         justify-content: center;
 }
 
-.backgroundImage2{
+.flexContactContainer{
     width: 100%;
-    align-items: center; /*The background image is not the full width of the page*/
+    align-items: center; 
+    background-image: url(../assets/RedPlanetVentures/RedPlanetVentures/Assets/Images/headerbackBack.png);
+    background-size: cover;
+    height: 350px;
 }
 
 .main-heading{
@@ -323,7 +331,6 @@ h6{
     width: 607px;
     height: 700px;
     text-align: center;
-    background-image: url(../assets/Red\ Planet\ Ventures/.formBack);
     background-size: cover;
     background-position: center;
     color: #ffffff;
@@ -333,6 +340,10 @@ h6{
     display: flex;
     width: 607px;
     height: 700px;
+}
+#contact{
+    background-image: url(../assets/RedPlanetVentures/RedPlanetVentures/Assets/Images/formBack.png);
+    background-size: cover;
 }
 
 .formContainer{
@@ -365,6 +376,14 @@ h6{
     justify-content: center;
 }
 
+.flexHeaderContainer1{
+    width: 100%;
+    align-items: center; 
+    background-image: url(../assets/RedPlanetVentures/RedPlanetVentures/Assets/Images/headerbackBack.png);
+    background-size: cover;
+    height: 350px;
+}
+
 .flexHeaderContainer2{
     display: flex;
     width: 100%;
@@ -380,9 +399,8 @@ h6{
 
 .vl {
     border-left: 6px solid green;
-    height: 500px;
-    position: absolute;
-    left: 50%;
+    height: 5px;
+    left: 10%;
     margin-left: -3px;
     top: 0;
 }
@@ -414,40 +432,69 @@ h6{
     margin-bottom: 12px; /* Add some space below the input */
 }
 
-.flexFlightItem p1{
-    width: 30%;
-    height: 50%;
-    padding: 10px;
-    text-align: center;
-    background-color: #ffffff;
-    border-radius: 20%;
-    color: #0035f6;
-}
-
 .flexFlightContainer1{
     display: flex;
-    width: 50%;
+    width: 100%;
+    max-width: 100%;
     flex-direction: row;
     align-items: center;
     justify-content: center;
+    margin: 20px;
 }
 
-.checked {
-    color: orange;
-  }
-
-.vl {
-    border-left: 6px solid green;
-    height: 500px;
-    position: absolute;
-    left: 50%;
-    margin-left: -3px;
-    top: 0;
+.flexFlightContainer2{
+    display: flex;
+    width: 50%;
+    max-width: 50%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 20px;
+    float: left;
 }
 
 .flexFlightItem1 img{
     width: 350px;
     margin-left: 20px;
+}
+
+.flexFlightContainer3{
+    display: flex;
+    width: 50%;
+    max-width: 50%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 20px;
+    float: right;
+}
+
+.flexStarContainer1{
+    display: flex;
+    width: 50%;
+    max-width: 50%;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin: 20px;
+    float: right;
+}
+
+.checked {
+    color: orange;
+}
+
+.vl {
+    border-left: 6px solid green;
+    height: 5px;
+    left: 10%;
+    margin-left: -3px;
+    top: 0;
+}
+
+/* divider line */
+hr.solid {
+    border-top: 3px solid #bbb;
 }
 
 .button3 {
@@ -463,17 +510,52 @@ h6{
     font-family: 'Poppins', sans-serif;
 }
 
-/* divider line */
-hr.solid {
-    border-top: 3px solid #bbb;
-}
-
-.flexFlightContainer2{
+.flexInformationMoonContainer{
     display: flex;
     width: 50%;
+    max-width: 50%;
+    flex-direction: column;
+    align-items: left;
+    justify-content: left;
+    margin: 20px;
+    float: left;
+}
+
+.flexFlightContainer4{
+    display: flex;
+    width: 100%;
+    max-width: 100%;
     flex-direction: row;
     align-items: center;
     justify-content: center;
+    margin: 20px;
+}
+
+.flexFlightContainer5{
+    display: flex;
+    width: 50%;
+    max-width: 50%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 20px;
+    float: left;
+}
+
+.flexFlightItem2 img{
+    width: 350px;
+    margin-left: 20px;
+}
+
+.flexFlightContainer6{
+    display: flex;
+    width: 50%;
+    max-width: 50%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 20px;
+    float: right;
 }
 
 .checked {
@@ -482,16 +564,15 @@ hr.solid {
 
 .vl {
     border-left: 6px solid green;
-    height: 500px;
-    position: absolute;
-    left: 50%;
+    height: 5px;
+    left: 10%;
     margin-left: -3px;
     top: 0;
 }
 
-.flexFlightItem2 img{
-    width: 350px;
-    margin-left: 20px;
+/* divider line */
+hr.solid {
+    border-top: 3px solid #bbb;
 }
 
 .button4 {
@@ -507,17 +588,39 @@ hr.solid {
     font-family: 'Poppins', sans-serif;
 }
 
-/* divider line */
-hr.solid {
-    border-top: 3px solid #bbb;
-}
-
-.flexFlightContainer3{
+.flexFlightContainer7{
     display: flex;
-    width: 50%;
+    width: 100%;
+    max-width: 100%;
     flex-direction: row;
     align-items: center;
     justify-content: center;
+    margin: 20px;
+}
+
+.flexFlightContainer8{display: flex;
+    width: 50%;
+    max-width: 50%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 20px;
+    float: left;}
+
+    .flexFlightItem3 img{
+        width: 350px;
+        margin-left: 20px;
+    }
+
+.flexFlightContainer9{
+    display: flex;
+    width: 50%;
+    max-width: 50%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 20px;
+    float: right;
 }
 
 .checked {
@@ -526,16 +629,15 @@ hr.solid {
 
 .vl {
     border-left: 6px solid green;
-    height: 500px;
-    position: absolute;
-    left: 50%;
+    height: 5px;
+    left: 10%;
     margin-left: -3px;
     top: 0;
 }
 
-.flexFlightItem3 img{
-    width: 350px;
-    margin-left: 20px;
+/* divider line */
+hr.solid {
+    border-top: 3px solid #bbb;
 }
 
 .button5 {
@@ -550,17 +652,42 @@ hr.solid {
     font-size: 20px;
     font-family: 'Poppins', sans-serif;
 }
-/* divider line */
-hr.solid {
-    border-top: 3px solid #bbb;
-}
 
-.flexFlightContainer4{
+.flexFlightContainer10{
     display: flex;
-    width: 50%;
+    width: 100%;
+    max-width: 100%;
     flex-direction: row;
     align-items: center;
     justify-content: center;
+    margin: 20px;
+}
+
+.flexFlightContainer11{
+    display: flex;
+    width: 50%;
+    max-width: 50%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 20px;
+    float: left;
+}
+
+.flexFlightItem4 img{
+    width: 350px;
+    margin-left: 20px;
+}
+
+.flexFlightContainer12{
+    display: flex;
+    width: 50%;
+    max-width: 50%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 20px;
+    float: right;
 }
 
 .checked {
@@ -569,16 +696,15 @@ hr.solid {
 
 .vl {
     border-left: 6px solid green;
-    height: 500px;
-    position: absolute;
-    left: 50%;
+    height: 5px;
+    left: 10%;
     margin-left: -3px;
     top: 0;
 }
 
-.flexFlightItem4 img{
-    width: 350px;
-    margin-left: 20px;
+/* divider line */
+hr.solid {
+    border-top: 3px solid #bbb;
 }
 
 .button6 {
@@ -593,17 +719,42 @@ hr.solid {
     font-size: 20px;
     font-family: 'Poppins', sans-serif;
 }
-/* divider line */
-hr.solid {
-    border-top: 3px solid #bbb;
-}
 
-.flexFlightContainer5{
+.flexFlightContainer13{
     display: flex;
-    width: 50%;
+    width: 100%;
+    max-width: 100%;
     flex-direction: row;
     align-items: center;
     justify-content: center;
+    margin: 20px;
+}
+
+.flexFlightContainer14{
+    display: flex;
+    width: 50%;
+    max-width: 50%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 20px;
+    float: left;
+}
+
+.flexFlightItem5 img{
+    width: 350px;
+    margin-left: 20px;
+}
+
+.flexFlightContainer15{
+    display: flex;
+    width: 50%;
+    max-width: 50%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 20px;
+    float: right;
 }
 
 .checked {
@@ -612,16 +763,15 @@ hr.solid {
 
 .vl {
     border-left: 6px solid green;
-    height: 500px;
-    position: absolute;
-    left: 50%;
+    height: 5px;
+    left: 10%;
     margin-left: -3px;
     top: 0;
 }
 
-.flexFlightItem5 img{
-    width: 350px;
-    margin-left: 20px;
+/* divider line */
+hr.solid {
+    border-top: 3px solid #bbb;
 }
 
 .button7 {
@@ -636,17 +786,41 @@ hr.solid {
     font-size: 20px;
     font-family: 'Poppins', sans-serif;
 }
-/* divider line */
-hr.solid {
-    border-top: 3px solid #bbb;
-}
 
-.flexFlightContainer6{
+.flexFlightContainer16{
     display: flex;
-    width: 50%;
+    width: 100%;
+    max-width: 100%;
     flex-direction: row;
     align-items: center;
     justify-content: center;
+    margin: 20px;
+}
+.flexFlightContainer17{
+    display: flex;
+    width: 50%;
+    max-width: 50%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 20px;
+    float: left;
+}
+
+.flexFlightItem6 img{
+    width: 350px;
+    margin-left: 20px;
+}
+
+.flexFlightContainer18{
+    display: flex;
+    width: 50%;
+    max-width: 50%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 20px;
+    float: right;
 }
 
 .checked {
@@ -655,16 +829,15 @@ hr.solid {
 
 .vl {
     border-left: 6px solid green;
-    height: 500px;
-    position: absolute;
-    left: 50%;
+    height: 5px;
+    left: 10%;
     margin-left: -3px;
     top: 0;
 }
 
-.flexFlightItem6 img{
-    width: 350px;
-    margin-left: 20px;
+/* divider line */
+hr.solid {
+    border-top: 3px solid #bbb;
 }
 
 .button8 {
@@ -678,10 +851,6 @@ hr.solid {
     display: inline-block;
     font-size: 20px;
     font-family: 'Poppins', sans-serif;
-}
-/* divider line */
-hr.solid {
-    border-top: 3px solid #bbb;
 }
 
 .button9 {
@@ -697,52 +866,88 @@ hr.solid {
     font-family: 'Poppins', sans-serif;
 }
 
-.flexFooterContainer1{
-    flex: auto;
-    flex-direction: row;
-    width: auto;
+/*Footer starts here..............................................................................................................................*/
+.flexFooterContainer{
+    display: flex;
+    flex: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    max-width: 100%;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
 }
 
-.flexFooterItem1{
-    width: 266px, 48px;
+.flexFooterContainer1{
+    display: flex;
+    flex: auto;
+    width: 50%;
+    max-width: 50%;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin: 20px;
+    float: left;
+}
+
+.flexFooterItem1 img{
+    width: 26px 48px;
 }
 
 .flexFooterContainer2{
+    display: flex;
     flex: auto;
+    width: 50%;
+    max-width: 50%;
     flex-direction: row;
-    width: auto;
+    align-items: center;
+    justify-content: center;
+    margin: 20px;
+    float: center;
 }
 
 .flexFooterContainer3{
+    display: flex;
     flex: auto;
+    width: 50%;
+    max-width: 50%;
     flex-direction: row;
-    width: auto;
+    align-items: center;
+    justify-content: center;
+    margin: 20px;
+    float: center;
 }
 
-.flexFooterItem2{
-    flex-direction: column;
-    width: 77px, 77px;
-}
+    .flexFooterItem2{
+        flex-direction: row;
+        width: 77px 77px;
+        padding: 10px;
+    }
 
-.flexFooterItem3{
-    flex-direction: column;
-    width: 77px, 77px;
-}
+    .flexFooterItem3{
+        flex-direction: row;
+        width: 77px 77px;
+        padding: 10px;
+    }
 
-.flexFooterItem4{
-    flex-direction: column;
-    width: 77px, 77px;
-}
+    .flexFooterItem4{
+        flex-direction: row;
+        width: 77px 77px;
+        padding: 10px;
+    }
 
-.flexFooterItem5{
-    flex-direction: column;
-    width: 77px, 77px;
-}
+    .flexFooterItem5{
+        flex-direction: row;
+        width: 77px 77px;
+        padding: 10px;
+    }
 
 .flexFooterContainer4{
-    flex: auto;
-    flex-direction: row;
-    width: auto;
+    flex: 100%;
+    flex-direction: column;
+    width: 100%;
 }
 
 .flexFooterItem6{
@@ -753,4 +958,9 @@ hr.solid {
 .flexFooterItem7{
     flex-direction: column;
     float: right;
+}
+
+/* divider line */
+hr.solid {
+    border-top: 3px solid #bbb;
 }
