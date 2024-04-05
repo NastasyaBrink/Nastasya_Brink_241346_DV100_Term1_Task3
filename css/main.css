@@ -5,20 +5,34 @@ body {
     width: 100%;
 }
 
+.headersection{
+    background-image: url(../assets/RedPlanetVentures/RedPlanetVentures/Assets/Images/homePageHeader.png);
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+}
+
+.headersection2{
+    background-image: url(../assets/RedPlanetVentures/RedPlanetVentures/Assets/Images/headerbackBack.png);
+    background-size: cover;
+    width: 100%;
+    height: 70vh;
+}
+
 /*navigation bar */  
 .topNav{ 
     overflow: hidden;
-    background-color: #7ab4c7;
+    background-color: #ffffffb1;
     margin-top: 10px;
     padding: 15px;
-    border-radius: 30px;
+    border-radius: 50px;
 }
 
 /* links inside the navigation bar */
 .topNav a{
     float: left;
     display: block;
-    color: rgb(255, 0, 0);
+    color: rgb(0, 0, 0);
     text-align: center;
     padding: 20px 48px;
     text-decoration: none;
@@ -27,7 +41,6 @@ body {
 
 .topNav img{
     float: left;
-    padding: 26px 48px;
 }
 
 .topNavCenter {
@@ -42,7 +55,7 @@ body {
 
 /* "active" element to highlight the current page */
 .topNav a.active {
-    background-color: #dfcd58;
+    background-color: #d03252;
     color: white;
 }
 
@@ -54,39 +67,96 @@ body {
     margin-top: 8px;
     margin-right: 16px;
     font-size: 17px;
+    width: 26px 48px;
   }
+
+  h3{
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    color: #000000;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 0px;
+}
+
+h4{
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    color: #000000;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 0px;
+}
+
+p{
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    color: #000000;
+    text-align: left;
+    letter-spacing: 0px;
+    margin-right: 20px;
+    padding-left: 2em;
+    padding-right: 2em;
+}
+
+.text{
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    color: #ffffff;
+    text-align: left;
+    letter-spacing: 0px;
+    margin-right: 20px;
+    padding-left: 2em;
+    padding-right: 2em;
+}
+
 
 .flexHomeContainer1{
     display: flex;
     width: 100%;
+    max-width: 100%;
     flex-direction: row;
     align-items: center;
     justify-content: center;
+    margin: 20px;
+    background-color: #ffffff;
 }
 
-.flexHomeContainer1{
-    width: 100%;
-    align-items: center; 
-    background-image: url(../assets/RedPlanetVentures/RedPlanetVentures/Assets/Images/homePageHeader.png);
-    background-size: cover;
-    height: 350px;
+.flexHomeContainer2{
+    display: flex;
+    width: 50%;
+    max-width: 50%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 20px;
+    float: left;
 }
 
-h1{
+.flexHomeItem1 img{
+    width: 350px;
+    margin-left: 20px;
+}
+
+@font-face {
+    font-family: 'PorterSans';
+    src: url(../assets/RedPlanetVentures/RedPlanetVentures/Assets/Fonts/porter_sans_block/porter-sans-inline-block-webfont.woff) format(".woff");
+}
+
+.flexHomeContainerItem h1{
         max-width: 607px;
         text-align: center;
         margin: auto;
-        font-size: 48px;
-        font-family: 'Poppins', sans-serif;
-        font-weight: 700;
-        font-style: normal;
+        font-size: 35px;
+        font-family: 'PorterSans';
 }
       
-h2{
+.flexHomeContainerItem h2{
     max-width: 607px;
     text-align: center;
     margin: auto;
-    font-size: 48px;
+    font-size: 25px;
+    font-family: 'PorterSans';
 }
 
 .flexHomeContainer2{
@@ -96,7 +166,7 @@ h2{
     align-items: center;
     align-content: center;
     justify-content: center;
-    background-color: #ff0000;
+    background-color: #000000;
 }
 
 .flexHomeItem1 img{
@@ -106,107 +176,88 @@ h2{
     margin: 50px;
 }
 
-.flexHomeContainer3{
-    display: flex;
-    width: 50%;
-    flex-direction: column;
-    align-items: center;
-    align-content: center;
-    justify-content: center;
-    background-color: #000000;
-}
-
-.text{
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 16px;
-    color: #000000;
-    text-align: right;
-    letter-spacing: 0px;
-    margin-right: 20px;
-    padding-left: 2em;
-    padding-right: 2em;
-}
-
-h3{
-    font-family: 'Poppins', sans-serif;
-    font-size: 16px;
-    color: #000000;
-    text-align: right;
-    text-align: right;
-    text-transform: uppercase;
-    letter-spacing: 0px;
-    margin-right: 20px;
-}
-
-h4{
-    font-family: 'Poppins', sans-serif;
-    font-size: 16px;
-    color: #000000;
-    text-align: right;
-    text-transform: uppercase;
-    letter-spacing: 0px;
-    margin-right: 20px;
-}
-
-p{
-    font-family: 'Poppins', sans-serif;
-    font-size: 16px;
-    color: #ff0000;
-    text-align: center;
-    letter-spacing: 0px;
-    margin-right: 20px;
-    padding-left: 2em;
-    padding-right: 2em;
-}
-
-.button1 {
-    background-color: #ff0000;
-    color: #ffffff;
-    padding: 270px, 70px;
-    width: 270px, 70px;
+.button1{
+    border: none;
     border-radius: 12px;
+    color: rgb(255, 255, 255);
+    background-color: #ff0000;
+    padding: 17px 7px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    font-size: 20px;
-    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+  }
+
+  .button1:hover {
+    background-color: #008CBA;
+    color: white;
+  }
+
+.flexHomeContainer3{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
 }
 
 .flexHomeContainer4{
     display: flex;
+    flex: 25%;
+    padding: 5px;
     width: 50%;
-    flex-direction: column;
-    align-items: center;
-    align-content: center;
-    justify-content: center;
-    background-color: #000000;
-}
-
-.flexHomeContainer5{
-    display: flex;
-    width: 50%;
-    flex-direction: column;
-    align-items: center;
-    align-content: center;
-    justify-content: space-evenly;
-    background-color: #000000;
+    flex-direction: row;
 }
 
 .flexHomeItem2 img{
-    width: 609px;
-    height:  649px;
-    text-align: left;
+    width: 9px;
+    height:  12px;
     margin: 50px;
+}
+
+.flexHomeItem3{
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
 }
 
 .flexHomeContainer6{
     display: flex;
     width: 100%;
+    flex-direction: column;
+    background-color:#6a00bc;
+}
+
+.flexHomeContainer7{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background-color:#6a00bc;
+}
+
+.rowItem {
+    flex: 25%;
+    padding: 5px;
+}
+
+.column{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.flexHomeContainer8{
+    display: flex;
     flex-direction: row;
     align-items: center;
     align-content: center;
     justify-content: center;
-    background-color: #000000;
+    background-color:#6a00bc;
 }
 
 .row {
@@ -218,20 +269,71 @@ p{
     padding: 5px;
 }
 
-.button2 {
-    background-color: #ff0000;
-    color: #ffffff;
-    padding: 270px, 70px;
-    width: 270px, 70px;
+.flexButtonContainer2{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.button2{
+    border: none;
     border-radius: 12px;
+    color: rgb(255, 255, 255);
+    background-color: #ff0000;
+    padding: 17px 7px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    font-size: 20px;
-    font-family: 'Poppins', sans-serif;
-}
+    font-size: 16px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+  }
 
-/*Contact Page starts here..............................................................................................................................*/
+  .button2:hover {
+    background-color: #008CBA;
+    color: white;
+  }
+  
+.button3{
+    border: none;
+    border-radius: 12px;
+    color: rgb(255, 255, 255);
+    background-color: #ff0000;
+    padding: 17px 7px;
+    width: 200px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+  }
+
+  .button3:hover {
+    background-color: #008CBA;
+    color: white;
+  }
+
+  .w3-button{
+    border: none;
+    border-radius: 12px;
+    color: rgb(255, 255, 255);
+    background-color: #6a00bc;
+    padding: 20px;
+    width: 100px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+  }
+
+/*Contact Page starts here..........................................................................................................................................................................................................................................................................................................................................................................................*/
 
 .flexContactContainer{
         display: flex;
@@ -239,14 +341,6 @@ p{
         flex-direction: row;
         align-items: center;
         justify-content: center;
-}
-
-.flexContactContainer{
-    width: 100%;
-    align-items: center; 
-    background-image: url(../assets/RedPlanetVentures/RedPlanetVentures/Assets/Images/headerbackBack.png);
-    background-size: cover;
-    height: 350px;
 }
 
 .main-heading{
@@ -257,7 +351,15 @@ p{
     font-family: 'Poppins', sans-serif;
 }
 
-.rootFont{
+.flexParagraphContainer{
+    display: flex;
+    width: 50%;
+    max-width: 50%;
+    flex-direction: column;
+    align-items: left;
+    justify-content: left;
+    margin: 20px;
+    float: left;
     font-family: 'Poppins', sans-serif;
 }
 
@@ -290,31 +392,8 @@ h6{
 }
 
 .flexContactItem2{
-    width: 350px;
-}
-
-.flexContactContainer3{
-    display: flex;
-}
-
-.flexContactItem3{
-    width: 350px;
-}
-
-.flexContactContainer4{
-    display: flex;
-}
-
-.flexContactItem4{
-    width: 350px;
-}
-
-.flexContactContainer5{
-    display: flex;
-}
-
-.flexContactItem5{
-    width: 350px;
+    padding: auto;
+    justify-content: space-between;
 }
 
 @font-face{
@@ -366,7 +445,7 @@ h6{
 }
 /*the form ends here*/
 
-/*Flight page starts here..............................................................................................................................*/
+/*Flight page starts here..........................................................................................................................................................................................................................................................................................................................................................................................................................................................*/
 
 .flexHeaderContainer1{
     display: flex;
@@ -374,14 +453,6 @@ h6{
     flex-direction: row;
     align-items: center;
     justify-content: center;
-}
-
-.flexHeaderContainer1{
-    width: 100%;
-    align-items: center; 
-    background-image: url(../assets/RedPlanetVentures/RedPlanetVentures/Assets/Images/headerbackBack.png);
-    background-size: cover;
-    height: 350px;
 }
 
 .flexHeaderContainer2{
@@ -390,19 +461,12 @@ h6{
     flex-direction: row;
     align-items: center;
     justify-content: center;
+    background-color: #6a00bc;
 }
 
 .flexbox1{
     display: flex;
     width: 50%;
-}
-
-.vl {
-    border-left: 6px solid green;
-    height: 5px;
-    left: 10%;
-    margin-left: -3px;
-    top: 0;
 }
 
 .flexbox2 {
@@ -440,6 +504,7 @@ h6{
     align-items: center;
     justify-content: center;
     margin: 20px;
+    background-color: #ffffff;
 }
 
 .flexFlightContainer2{
@@ -463,20 +528,16 @@ h6{
     width: 50%;
     max-width: 50%;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    margin: 20px;
-    float: right;
 }
 
 .flexStarContainer1{
     display: flex;
-    width: 50%;
-    max-width: 50%;
+    width: 90%;
+    max-width: 90%;
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    margin: 20px;
+    margin-left: 20px;
     float: right;
 }
 
@@ -485,40 +546,42 @@ h6{
 }
 
 .vl {
-    border-left: 6px solid green;
-    height: 5px;
-    left: 10%;
-    margin-left: -3px;
+    border-left: 3px solid #bbb;
+    height: 25px;
+    left: 20%;
+    margin-left: 50px;
+    padding: 10px;
     top: 0;
 }
 
-/* divider line */
-hr.solid {
-    border-top: 3px solid #bbb;
-}
-
-.button3 {
-    background-color: #ff0000;
-    color: #ffffff;
-    padding: 270px, 70px;
-    width: 270px, 70px;
-    border-radius: 12px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 20px;
-    font-family: 'Poppins', sans-serif;
-}
-
-.flexInformationMoonContainer{
+.flexInformationContainer{
     display: flex;
     width: 50%;
     max-width: 50%;
     flex-direction: column;
-    align-items: left;
     justify-content: left;
-    margin: 20px;
-    float: left;
+}
+
+.text2{
+    font-family: 'Poppins', sans-serif;
+    font-size: 10px;
+    color: #000000;
+    text-align: left;
+    letter-spacing: 0px;
+    margin-right: 20px;
+    padding-left: 2em;
+    padding-right: 2em;
+}
+
+.text3{
+    font-family: 'Poppins', sans-serif;
+    font-size: 10px;
+    color: #ffffff;
+    text-align: left;
+    letter-spacing: 0px;
+    margin-right: 20px;
+    padding-left: 2em;
+    padding-right: 2em;
 }
 
 .flexFlightContainer4{
@@ -529,6 +592,7 @@ hr.solid {
     align-items: center;
     justify-content: center;
     margin: 20px;
+    background-color: #6a00bc;
 }
 
 .flexFlightContainer5{
@@ -542,335 +606,42 @@ hr.solid {
     float: left;
 }
 
-.flexFlightItem2 img{
-    width: 350px;
-    margin-left: 20px;
-}
-
 .flexFlightContainer6{
     display: flex;
     width: 50%;
     max-width: 50%;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    margin: 20px;
-    float: right;
 }
 
-.checked {
-    color: orange;
+.flexInformationContainer{
+    display: flex;
+    width: 50%;
+    max-width: 50%;
+    flex-direction: column;
+    justify-content: left;
 }
 
-.vl {
-    border-left: 6px solid green;
-    height: 5px;
-    left: 10%;
-    margin-left: -3px;
-    top: 0;
-}
-
-/* divider line */
-hr.solid {
-    border-top: 3px solid #bbb;
-}
-
-.button4 {
-    background-color: #ff0000;
-    color: #ffffff;
-    padding: 270px, 70px;
-    width: 270px, 70px;
+.w3-button2{
+    border: none;
     border-radius: 12px;
+    color: rgb(255, 255, 255);
+    background-color: #48aebf;
+    padding: 20px;
+    width: 100px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    font-size: 20px;
-    font-family: 'Poppins', sans-serif;
-}
-
-.flexFlightContainer7{
-    display: flex;
-    width: 100%;
-    max-width: 100%;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    margin: 20px;
-}
-
-.flexFlightContainer8{display: flex;
-    width: 50%;
-    max-width: 50%;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    margin: 20px;
-    float: left;}
-
-    .flexFlightItem3 img{
-        width: 350px;
-        margin-left: 20px;
-    }
-
-.flexFlightContainer9{
-    display: flex;
-    width: 50%;
-    max-width: 50%;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    margin: 20px;
-    float: right;
-}
-
-.checked {
-    color: orange;
-}
-
-.vl {
-    border-left: 6px solid green;
-    height: 5px;
-    left: 10%;
-    margin-left: -3px;
-    top: 0;
-}
-
-/* divider line */
-hr.solid {
-    border-top: 3px solid #bbb;
-}
-
-.button5 {
-    background-color: #ff0000;
-    color: #ffffff;
-    padding: 270px, 70px;
-    width: 270px, 70px;
-    border-radius: 12px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 20px;
-    font-family: 'Poppins', sans-serif;
-}
-
-.flexFlightContainer10{
-    display: flex;
-    width: 100%;
-    max-width: 100%;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    margin: 20px;
-}
-
-.flexFlightContainer11{
-    display: flex;
-    width: 50%;
-    max-width: 50%;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    margin: 20px;
-    float: left;
-}
-
-.flexFlightItem4 img{
-    width: 350px;
-    margin-left: 20px;
-}
-
-.flexFlightContainer12{
-    display: flex;
-    width: 50%;
-    max-width: 50%;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    margin: 20px;
-    float: right;
-}
-
-.checked {
-    color: orange;
-}
-
-.vl {
-    border-left: 6px solid green;
-    height: 5px;
-    left: 10%;
-    margin-left: -3px;
-    top: 0;
-}
-
-/* divider line */
-hr.solid {
-    border-top: 3px solid #bbb;
-}
-
-.button6 {
-    background-color: #ff0000;
-    color: #ffffff;
-    padding: 270px, 70px;
-    width: 270px, 70px;
-    border-radius: 12px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 20px;
-    font-family: 'Poppins', sans-serif;
-}
-
-.flexFlightContainer13{
-    display: flex;
-    width: 100%;
-    max-width: 100%;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    margin: 20px;
-}
-
-.flexFlightContainer14{
-    display: flex;
-    width: 50%;
-    max-width: 50%;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    margin: 20px;
-    float: left;
-}
-
-.flexFlightItem5 img{
-    width: 350px;
-    margin-left: 20px;
-}
-
-.flexFlightContainer15{
-    display: flex;
-    width: 50%;
-    max-width: 50%;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    margin: 20px;
-    float: right;
-}
-
-.checked {
-    color: orange;
-}
-
-.vl {
-    border-left: 6px solid green;
-    height: 5px;
-    left: 10%;
-    margin-left: -3px;
-    top: 0;
-}
-
-/* divider line */
-hr.solid {
-    border-top: 3px solid #bbb;
-}
-
-.button7 {
-    background-color: #ff0000;
-    color: #ffffff;
-    padding: 270px, 70px;
-    width: 270px, 70px;
-    border-radius: 12px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 20px;
-    font-family: 'Poppins', sans-serif;
-}
-
-.flexFlightContainer16{
-    display: flex;
-    width: 100%;
-    max-width: 100%;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    margin: 20px;
-}
-.flexFlightContainer17{
-    display: flex;
-    width: 50%;
-    max-width: 50%;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    margin: 20px;
-    float: left;
-}
-
-.flexFlightItem6 img{
-    width: 350px;
-    margin-left: 20px;
-}
-
-.flexFlightContainer18{
-    display: flex;
-    width: 50%;
-    max-width: 50%;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    margin: 20px;
-    float: right;
-}
-
-.checked {
-    color: orange;
-}
-
-.vl {
-    border-left: 6px solid green;
-    height: 5px;
-    left: 10%;
-    margin-left: -3px;
-    top: 0;
-}
-
-/* divider line */
-hr.solid {
-    border-top: 3px solid #bbb;
-}
-
-.button8 {
-    background-color: #ff0000;
-    color: #ffffff;
-    padding: 270px, 70px;
-    width: 270px, 70px;
-    border-radius: 12px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 20px;
-    font-family: 'Poppins', sans-serif;
-}
-
-.button9 {
-    background-color: #c20000;
-    color: #ffffff;
-    padding: 270px, 70px;
-    width: 270px, 70px;
-    border-radius: 12px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 20px;
-    font-family: 'Poppins', sans-serif;
-}
+    font-size: 16px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+  }
 
 /*Footer starts here..............................................................................................................................*/
 .flexFooterContainer{
     display: flex;
     flex: 100%;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
     justify-content: center;
     width: 100%;
@@ -885,7 +656,7 @@ hr.solid {
     flex: auto;
     width: 50%;
     max-width: 50%;
-    flex-direction: row;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     margin: 20px;
@@ -893,7 +664,8 @@ hr.solid {
 }
 
 .flexFooterItem1 img{
-    width: 26px 48px;
+    width: 50%;
+    padding-left: 30px;
 }
 
 .flexFooterContainer2{
@@ -901,63 +673,45 @@ hr.solid {
     flex: auto;
     width: 50%;
     max-width: 50%;
-    flex-direction: row;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin: 20px;
-    float: center;
 }
 
 .flexFooterContainer3{
     display: flex;
     flex: auto;
-    width: 50%;
-    max-width: 50%;
     flex-direction: row;
     align-items: center;
     justify-content: center;
     margin: 20px;
-    float: center;
 }
 
-    .flexFooterItem2{
-        flex-direction: row;
-        width: 77px 77px;
-        padding: 10px;
-    }
-
-    .flexFooterItem3{
-        flex-direction: row;
-        width: 77px 77px;
-        padding: 10px;
-    }
-
-    .flexFooterItem4{
-        flex-direction: row;
-        width: 77px 77px;
-        padding: 10px;
-    }
-
-    .flexFooterItem5{
-        flex-direction: row;
-        width: 77px 77px;
+    .flexFooterItem2 img{
+        flex: 25%;
+        width: 77px;
         padding: 10px;
     }
 
 .flexFooterContainer4{
-    flex: 100%;
-    flex-direction: column;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
     width: 100%;
-}
-
-.flexFooterItem6{
-    flex-direction: column;
-    float: left;
+    color: #000000;
+    margin: 0;
+    padding: 5px 2em;
 }
 
 .flexFooterItem7{
-    flex-direction: column;
-    float: right;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.flexFooterItem7 div{
+    padding: 0 20px;
 }
 
 /* divider line */
