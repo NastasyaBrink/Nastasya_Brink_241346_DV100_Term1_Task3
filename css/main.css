@@ -122,17 +122,6 @@ p{
     background-color: #ffffff;
 }
 
-.flexHomeContainer2{
-    display: flex;
-    width: 50%;
-    max-width: 50%;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    margin: 20px;
-    float: left;
-}
-
 .flexHomeItem1 img{
     width: 350px;
     margin-left: 20px;
@@ -161,12 +150,9 @@ p{
 
 .flexHomeContainer2{
     display: flex;
-    width: 50%;
-    flex-direction: column;
-    align-items: center;
-    align-content: center;
-    justify-content: center;
-    background-color: #000000;
+    width: 100%;
+    flex-direction: row;
+    background-color: #6a00bc;
 }
 
 .flexHomeItem1 img{
@@ -176,28 +162,8 @@ p{
     margin: 50px;
 }
 
-.button1{
-    border: none;
-    border-radius: 12px;
-    color: rgb(255, 255, 255);
-    background-color: #ff0000;
-    padding: 17px 7px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    margin: 4px 2px;
-    transition-duration: 0.4s;
-    cursor: pointer;
-  }
-
-  .button1:hover {
-    background-color: #008CBA;
-    color: white;
-  }
-
 .flexHomeContainer3{
-    width: 100%;
+    width: 50%;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -205,33 +171,72 @@ p{
 
 .flexHomeContainer4{
     display: flex;
-    flex: 25%;
+    text-align: center;
+    justify-content: center;
+    padding: 5px;
+    width: 30%;
+    flex-direction: column;
+}
+
+.button1{
+    border: none;
+    border-radius: 12px;
+    color: rgb(255, 255, 255);
+    background-color: #ff0000;
+    width: 40%;
+    padding: 17px 7px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    margin-left: 30px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+.button1:hover {
+    background-color: #008CBA;
+    color: white;
+}
+
+.flexHomeContainer5{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.flexHomeContainer6{
+    display: flex;
+    padding: 5px;
+    width: 30%;
+    flex-direction: column;
+}
+
+.flexHomeContainer7{
+    display: flex;
     padding: 5px;
     width: 50%;
-    flex-direction: row;
+    flex-direction: column;
+    justify-content: center;
 }
 
-.flexHomeItem2 img{
-    width: 9px;
-    height:  12px;
-    margin: 50px;
-}
-
-.flexHomeItem3{
+.flexHomeItem2{
     width: 70%;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
 }
 
-.flexHomeContainer6{
+.flexHomeContainer8{
     display: flex;
     width: 100%;
     flex-direction: column;
     background-color:#6a00bc;
 }
 
-.flexHomeContainer7{
+.flexHomeContainer9{
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -249,15 +254,6 @@ p{
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-}
-
-.flexHomeContainer8{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    align-content: center;
-    justify-content: center;
-    background-color:#6a00bc;
 }
 
 .row {
@@ -391,9 +387,15 @@ h6{
     display: flex;
 }
 
+.flexContactContainer3{
+    display: flex;
+    flex-direction: row;
+    width: 50%
+}
+
 .flexContactItem2{
-    padding: auto;
-    justify-content: space-between;
+    width: 25%;
+    padding: 5px;
 }
 
 @font-face{
@@ -406,13 +408,22 @@ h6{
     font-size: 20px;
 }
 
-.backgroundImage3 {
-    width: 607px;
-    height: 700px;
-    text-align: center;
-    background-size: cover;
-    background-position: center;
-    color: #ffffff;
+.flexSocialContainer{
+    display: flex;
+    flex-direction: row;
+    width: 50%;
+}
+
+.flexMapContainer{
+    display:flex;
+    flex-direction: column;
+}
+
+.flexFormContainer{
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+    justify-content: end;
 }
 
 .flexRight{
@@ -430,6 +441,10 @@ h6{
     height: 700px;
     text-align: center; 
 } 
+
+.flexFormItem{
+    display: flex;
+}
 
 .submitButton {
     background-color: #ff0000;
