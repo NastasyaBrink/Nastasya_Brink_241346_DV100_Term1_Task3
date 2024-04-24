@@ -5,14 +5,14 @@ body {
     width: 100%;
 }
 
-.headersection{
+.flexHeaderImageContainer{
     background-image: url(../assets/RedPlanetVentures/RedPlanetVentures/Assets/Images/homePageHeader.png);
     background-size: cover;
     width: 100%;
     height: 100vh;
 }
 
-.headersection2{
+.flexHeaderImageContainer2{
     background-image: url(../assets/RedPlanetVentures/RedPlanetVentures/Assets/Images/headerbackBack.png);
     background-size: cover;
     width: 100%;
@@ -59,18 +59,42 @@ body {
     color: white;
 }
 
+.topNav a.active:hover {
+    background-color: #ddd;
+    color: black;
+}
+
 /* search box inside the navigation bar */
-.topnav input[type=text] {
-    float: right;
-    padding: 6px;
+.topNav input[type=text] {
+    padding: 20px;
     border: none;
-    margin-top: 8px;
     margin-right: 16px;
     font-size: 17px;
-    width: 26px 48px;
+    font-family: 'Poppins', sans-serif;
   }
 
-  h3{
+  
+h2{
+    font-family: 'Poppins', sans-serif;
+    font-size: 25px;
+    color: #000000;
+    text-align: left;
+    text-transform: uppercase;
+    letter-spacing: 0px;
+    margin-left: 30px;
+}
+
+h2.heading{
+    font-family: 'Poppins', sans-serif;
+    font-size: 25px;
+    color: #ffffff;
+    text-align: left;
+    text-transform: uppercase;
+    letter-spacing: 0px;
+    margin-left: 30px;
+}
+
+h3{
     font-family: 'Poppins', sans-serif;
     font-size: 16px;
     color: #000000;
@@ -113,13 +137,14 @@ p{
 
 .flexHomeContainer1{
     display: flex;
-    width: 100%;
-    max-width: 100%;
+    width: 50%;
+    max-width: 50%;
     flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    margin: 20px;
-    background-color: #ffffff;
+    align-items: left;
+    justify-content: left;
+    margin-top: 520px;
+    margin-left: 100px;
+    font-family: 'Poppins', sans-serif;
 }
 
 .flexHomeItem1 img{
@@ -265,11 +290,11 @@ p{
     padding: 5px;
 }
 
-.flexButtonContainer2{
+.flexButtonContainer{
     display: flex;
     width: 100%;
-    align-items: center;
-    justify-content: center;
+    align-items: left;
+    justify-content: left;
 }
 
 .button2{
@@ -306,6 +331,7 @@ p{
     margin: 4px 2px;
     transition-duration: 0.4s;
     cursor: pointer;
+    margin-left: 30px;
   }
 
   .button3:hover {
@@ -327,6 +353,7 @@ p{
     margin: 4px 2px;
     transition-duration: 0.4s;
     cursor: pointer;
+    margin-left: 30px;
   }
 
 /*Contact Page starts here..........................................................................................................................................................................................................................................................................................................................................................................................*/
@@ -339,11 +366,10 @@ p{
         justify-content: center;
 }
 
-.main-heading{
-    max-width: 607px;
+.flexHeadingContainer{
+    width: 40%;
     text-align: center;
-    margin: auto;
-    font-size: 48px;
+    font-size: 25px;
     font-family: 'Poppins', sans-serif;
 }
 
@@ -363,16 +389,15 @@ h5{
     color: #000000;
     text-align: center;
     font-family: 'Poppins', sans-serif;
-    font-weight: 400;
     font-style: normal;
 }
 
 h6{
-    color: #000000;
-    text-align: center;
+    color:#48aebf;
+    text-align: left;
     font-family: 'Poppins', sans-serif;
-    font-weight: 400;
     font-style: normal;
+    margin-left: 30px;
 }
 
 .flexContactContainer1{
@@ -477,6 +502,7 @@ h6{
     align-items: center;
     justify-content: center;
     background-color: #6a00bc;
+    margin-bottom: 2px;
 }
 
 .flexbox1{
@@ -520,6 +546,7 @@ h6{
     justify-content: center;
     margin: 20px;
     background-color: #ffffff;
+    margin-top: 5px;
 }
 
 .flexFlightContainer2{
@@ -551,9 +578,10 @@ h6{
     max-width: 90%;
     flex-direction: row;
     align-items: center;
-    justify-content: center;
+    justify-content: left;
     margin-left: 20px;
     float: right;
+    margin-left: 30px;
 }
 
 .checked {
@@ -575,12 +603,13 @@ h6{
     max-width: 50%;
     flex-direction: column;
     justify-content: left;
+    margin-left: 10px;
 }
 
 .text2{
     font-family: 'Poppins', sans-serif;
     font-size: 10px;
-    color: #000000;
+    color: #969696;
     text-align: left;
     letter-spacing: 0px;
     margin-right: 20px;
@@ -592,6 +621,28 @@ h6{
     font-family: 'Poppins', sans-serif;
     font-size: 10px;
     color: #ffffff;
+    text-align: left;
+    letter-spacing: 0px;
+    margin-right: 20px;
+    padding-left: 2em;
+    padding-right: 2em;
+}
+
+.text4{
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    color: #00ffff;
+    text-align: left;
+    letter-spacing: 0px;
+    margin-right: 20px;
+    padding-left: 2em;
+    padding-right: 2em;
+}
+
+.text5{
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    color: #969696;
     text-align: left;
     letter-spacing: 0px;
     margin-right: 20px;
@@ -650,6 +701,7 @@ h6{
     margin: 4px 2px;
     transition-duration: 0.4s;
     cursor: pointer;
+    margin-left: 30px;
   }
 
 /*Footer starts here..............................................................................................................................*/
@@ -730,6 +782,3 @@ h6{
 }
 
 /* divider line */
-hr.solid {
-    border-top: 3px solid #bbb;
-}
