@@ -5,6 +5,124 @@ body {
     width: 100%;
 }
 
+/*Headings/ text settings starts here............................................................................................................................................................................................*/  
+
+
+h1{
+    font-family: 'Porter-sans-inline-block-webfont', sans-serif;
+    font-size: 25px;
+    color: #000000;
+    text-align: left;
+    text-transform: uppercase;
+    letter-spacing: 0px;
+    margin-left: 30px;
+}
+
+h2{
+    font-family: 'Poppins', sans-serif;
+    font-size: 25px;
+    color: #000000;
+    text-align: left;
+    text-transform: uppercase;
+    letter-spacing: 0px;
+    margin-left: 30px;
+}
+
+h2.heading{
+    font-family: 'Poppins', sans-serif;
+    font-size: 25px;
+    color: #ffffff;
+    text-align: left;
+    text-transform: uppercase;
+    letter-spacing: 0px;
+    margin-left: 30px;
+}
+
+h3{
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    color: #000000;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 0px;
+}
+
+h3.heading{
+    font-family: 'Poppins', sans-serif;
+    font-size: 40px;
+    color: #ffffff;
+    text-align: left;
+    text-transform: uppercase;
+    letter-spacing: 0px;
+    margin-left: 50px;
+}
+
+h4{
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    color: #000000;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 0px;
+}
+
+h5{
+    color: #000000;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+}
+
+h6{
+    color:#48aebf;
+    text-align: left;
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    margin-left: 30px;
+}
+
+.text6{
+    color:#ffffff;
+    text-align: left;
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-size: 15px;
+    margin-left: 50px;
+    margin-bottom: 15px;
+}
+
+.text7{
+    color:#000000;
+    text-align: left;
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-size: 15px;
+}
+
+p{
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    color: #000000;
+    text-align: left;
+    letter-spacing: 0px;
+    margin-right: 20px;
+    padding-left: 2em;
+    padding-right: 2em;
+}
+
+.text{
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    color: #ffffff;
+    text-align: left;
+    letter-spacing: 0px;
+    margin-right: 20px;
+    padding-left: 2em;
+    padding-right: 2em;
+}
+
+/*Headings/ text settings starts here............................................................................................................................................................................................*/ 
+
 .flexHeaderImageContainer{
     background-image: url(../assets/RedPlanetVentures/RedPlanetVentures/Assets/Images/homePageHeader.png);
     background-size: cover;
@@ -19,7 +137,9 @@ body {
     height: 70vh;
 }
 
-/*navigation bar */  
+/*navigation bar starts here............................................................................................................................................................................................*/  
+
+/*navigation bar*/  
 .topNav{ 
     overflow: hidden;
     background-color: #ffffffb1;
@@ -73,91 +193,7 @@ body {
     font-family: 'Poppins', sans-serif;
 }
 
-h1{
-    font-family: 'Porter-sans-inline-block-webfont', sans-serif;
-    font-size: 25px;
-    color: #000000;
-    text-align: left;
-    text-transform: uppercase;
-    letter-spacing: 0px;
-    margin-left: 30px;
-}
-
-h2{
-    font-family: 'Poppins', sans-serif;
-    font-size: 25px;
-    color: #000000;
-    text-align: left;
-    text-transform: uppercase;
-    letter-spacing: 0px;
-    margin-left: 30px;
-}
-
-h2.heading{
-    font-family: 'Poppins', sans-serif;
-    font-size: 25px;
-    color: #ffffff;
-    text-align: left;
-    text-transform: uppercase;
-    letter-spacing: 0px;
-    margin-left: 30px;
-}
-
-h3{
-    font-family: 'Poppins', sans-serif;
-    font-size: 16px;
-    color: #000000;
-    text-align: center;
-    text-transform: uppercase;
-    letter-spacing: 0px;
-}
-
-h4{
-    font-family: 'Poppins', sans-serif;
-    font-size: 16px;
-    color: #000000;
-    text-align: center;
-    text-transform: uppercase;
-    letter-spacing: 0px;
-}
-
-h5{
-    color: #000000;
-    text-align: center;
-    font-family: 'Poppins', sans-serif;
-    font-style: normal;
-}
-
-h6{
-    color:#48aebf;
-    text-align: left;
-    font-family: 'Poppins', sans-serif;
-    font-style: normal;
-    margin-left: 30px;
-}
-
-p{
-    font-family: 'Poppins', sans-serif;
-    font-size: 16px;
-    color: #000000;
-    text-align: left;
-    letter-spacing: 0px;
-    margin-right: 20px;
-    padding-left: 2em;
-    padding-right: 2em;
-}
-
-.text{
-    font-family: 'Poppins', sans-serif;
-    font-size: 16px;
-    color: #ffffff;
-    text-align: left;
-    letter-spacing: 0px;
-    margin-right: 20px;
-    padding-left: 2em;
-    padding-right: 2em;
-}
-
+/*navigation bar ends here............................................................................................................................................................................................*/ 
 
 .flexHomeContainer1{
     display: flex;
@@ -200,6 +236,7 @@ p{
 .flexHomeContainer2{
     display: flex;
     width: 100%;
+    height: 700px;
     flex-direction: row;
     background-color: #6a00bc;
 }
@@ -217,6 +254,97 @@ p{
     flex-direction: column;
     justify-content: flex-start;
 }
+
+/*Slideshow starts here............................................................................................................................*/
+* {box-sizing:border-box}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/4 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+/*Slideshow end here............................................................................................................................*/
 
 .flexHomeContainer4{
     display: flex;
@@ -252,6 +380,7 @@ p{
 
 .flexHomeContainer5{
     width: 100%;
+    height: 600px;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -366,6 +495,27 @@ p{
     color: white;
   }
 
+  .button4{
+    border: none;
+    border-radius: 12px;
+    color: rgb(255, 255, 255);
+    background-color: #ff0000;
+    padding: 17px 7px;
+    width: 200px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+  }
+
+  .button4:hover {
+    background-color: #008CBA;
+    color: white;
+  }
+
   .w3-button{
     border: none;
     border-radius: 12px;
@@ -414,25 +564,59 @@ p{
 
 .flexContactContainer1{
     display: flex;
-}
-
-.flexContactItem1{
-    width: 350px;
+    flex-direction: row;
+    height: 765px;
 }
 
 .flexContactContainer2{
     display: flex;
+    margin: 50px;
 }
 
+.flexContactItem1{
+    margin-bottom: 50px;
+}
+/*...............................................................................................................................*/
 .flexContactContainer3{
     display: flex;
     flex-direction: row;
-    width: 50%
+    width: 100%
+}
+
+.flexContactContainer4{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin: 50px;
+}
+
+.flexContactContainer5{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin: 50px;
+}
+
+.flexContactContainer6{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.flexContactContainer7{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.flexContactContainer8{
+    display: flex;
+    flex-direction: row;
+    width: 100%
 }
 
 .flexContactItem2{
-    width: 25%;
-    padding: 5px;
+   margin: none;
 }
 
 @font-face{
@@ -442,58 +626,63 @@ p{
 
 .rootFont p{
     font-family: 'Porter Sans Block';
-    font-size: 20px;
 }
 
-.flexSocialContainer{
-    display: flex;
-    flex-direction: row;
-    width: 50%;
+.placeholder input[type=text] {
+    padding: 20px;
+    border: none;
+    margin-right: 16px;
+    font-size: 17px;
+    font-family: 'Poppins', sans-serif;
 }
 
-.flexMapContainer{
-    display:flex;
-    flex-direction: column;
+.placeholder input[type=email] {
+    padding: 20px;
+    border: none;
+    margin-right: 16px;
+    font-size: 17px;
+    font-family: 'Poppins', sans-serif;
 }
 
-.flexFormContainer{
-    display: flex;
-    flex-direction: column;
-    width: 25%;
-    justify-content: end;
+.placeholder input[type=password] {
+    padding: 20px;
+    border: none;
+    margin-right: 16px;
+    font-size: 17px;
+    font-family: 'Poppins', sans-serif;
 }
 
-.flexRight{
-    display: flex;
-    width: 607px;
-    height: 700px;
-}
 #contact{
     background-image: url(../assets/RedPlanetVentures/RedPlanetVentures/Assets/Images/formBack.png);
     background-size: cover;
+    width: 100%;
+    height: 795px;
+    border-radius: 5%;
 }
 
-.formContainer{
-    width: 607px;
-    height: 700px;
-    text-align: center; 
-} 
-
-.flexFormItem{
+.flexFormItem1{
     display: flex;
+    width: 80%;
+    background-color: #ffffff;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-bottom: 30px;
+    padding: 15px;
+    border-radius: 10px;
+    border-color: #969696;
 }
 
-.submitButton {
-    background-color: #ff0000;
-    color: #ffffff;
-    padding: 270px, 70px;
-    width: 270px, 70px;
-    border-radius: 12px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 20px;
-    font-family: 'Poppins', sans-serif;
+.flexFormItem2{
+    display: flex;
+    width: 80%;
+    background-color: #ffffff;
+    margin-top: 50px;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-bottom: 50px;
+    padding: 15px;
+    border-radius: 10px;
+    justify-content: flex-start;
 }
 /*the form ends here*/
 
@@ -553,6 +742,7 @@ p{
     display: flex;
     width: 100%;
     max-width: 100%;
+    height: 600px;
     flex-direction: row;
     align-items: center;
     justify-content: center;
@@ -665,6 +855,7 @@ p{
     display: flex;
     width: 100%;
     max-width: 100%;
+    height: 630px;
     flex-direction: row;
     align-items: center;
     justify-content: center;
@@ -751,8 +942,9 @@ p{
     width: 50%;
     max-width: 50%;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    align-items: left;
+    justify-content: left;
+    margin: 20px;
 }
 
 .flexFooterContainer3{
