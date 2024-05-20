@@ -9,9 +9,19 @@ body {
 
 
 h1{
-    font-family: 'Porter-sans-inline-block-webfont', sans-serif;
+    font-family: url(C:\Users\brink\Documents\GitHub\Nastasya_Brink_241346_DV100_Term1_Task3\assets\RedPlanetVentures\RedPlanetVentures\Assets\Fonts\porter_sans_block\porter-sans-inline-block-webfont.woff);
     font-size: 25px;
     color: #000000;
+    text-align: left;
+    text-transform: uppercase;
+    letter-spacing: 0px;
+    margin-left: 30px;
+}
+
+h1.heading{
+    font-family: 'Porter-sans-inline-block-webfont', sans-serif;
+    font-size: 25px;
+    color: #ffffff;
     text-align: left;
     text-transform: uppercase;
     letter-spacing: 0px;
@@ -66,6 +76,15 @@ h4{
     letter-spacing: 0px;
 }
 
+h4.heading{
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    color: #000000;
+    text-align: left;
+    text-transform: uppercase;
+    letter-spacing: 0px;
+}
+
 h5{
     color: #000000;
     text-align: center;
@@ -81,6 +100,67 @@ h6{
     margin-left: 30px;
 }
 
+h6.heading{
+    color:#00d9ff;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+}
+
+.text1{
+    color:#48aebf;
+    font-size: small;
+    text-align: left;
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    margin-left: 30px;
+}
+
+.text2{
+    font-family: 'Poppins', sans-serif;
+    font-size: 10px;
+    color: #969696;
+    text-align: left;
+    letter-spacing: 0px;
+    margin-right: 20px;
+    padding-left: 2em;
+    padding-right: 2em;
+}
+
+.text3{
+    font-family: 'Poppins', sans-serif;
+    font-size: 10px;
+    color: #ffffff;
+    text-align: left;
+    letter-spacing: 0px;
+    margin-right: 20px;
+    padding-left: 2em;
+    padding-right: 2em;
+}
+
+.text4{
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    color: #00ffff;
+    text-align: left;
+    letter-spacing: 0px;
+    margin-right: 20px;
+    padding-left: 2em;
+    padding-right: 2em;
+}
+
+.text5{
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    color: #969696;
+    text-align: left;
+    letter-spacing: 0px;
+    margin-right: 20px;
+    padding-left: 2em;
+    padding-right: 2em;
+}
+
+
 .text6{
     color:#ffffff;
     text-align: left;
@@ -92,16 +172,88 @@ h6{
 }
 
 .text7{
-    color:#000000;
-    text-align: left;
     font-family: 'Poppins', sans-serif;
-    font-style: normal;
-    font-size: 15px;
+    font-size: 14px;
+    color: #ffffff;
+    text-align: left;
+    letter-spacing: 0px;
+    margin-top: 20px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    padding-left: 2em;
+    padding-right: 2em;
 }
+
+.text10{
+    font-family: 'Poppins', sans-serif;
+    font-size: 25px;
+    font-weight: 500;
+    color: #ffffff;
+    text-align: center;
+    letter-spacing: 1px;
+}
+
+.text9{
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    color: #ffffff;
+    text-align: center;
+    letter-spacing: 0px;
+    margin-top: 20px;
+}
+
+.text11{
+    font-family: 'Poppins', sans-serif;
+    font-size: 40px;
+    font-weight: 600;
+    color: #ffffff;
+    text-align: left;
+    letter-spacing: 0px;
+    margin-left: 30px;
+}
+
+.text12{
+    font-family: 'Poppins', sans-serif;
+    font-size: 40px;
+    font-weight: 600;
+    color: #6a00bc;
+    text-align: left;
+    letter-spacing: 0px;
+    margin-left: 30px;
+}
+
+.text13{
+    font-family: 'Poppins', sans-serif;
+    font-size: 40px;
+    font-weight: 600;
+    color: #ffffff;
+    text-align: center;
+    letter-spacing: 0px;
+    margin-bottom: 20px;
+}
+
+.text14{
+    color: rgb(0, 0, 0);
+    text-align: center;
+}
+
+.text15{
+    color: rgb(255, 255, 255);
+    text-align: center;
+    margin-left: 32px;
+    margin-top: 22px;
+}
+
+.text16{
+    color: rgb(0, 0, 0);
+    text-align: left;
+}
+
 
 p{
     font-family: 'Poppins', sans-serif;
-    font-size: 16px;
+    font-size: 14px;
     color: #000000;
     text-align: left;
     letter-spacing: 0px;
@@ -128,6 +280,7 @@ p{
     background-size: cover;
     width: 100%;
     height: 100vh;
+    margin: none;
 }
 
 .flexHeaderImageContainer2{
@@ -135,6 +288,7 @@ p{
     background-size: cover;
     width: 100%;
     height: 70vh;
+    margin: none;
 }
 
 /*navigation bar starts here............................................................................................................................................................................................*/  
@@ -185,7 +339,7 @@ p{
 }
 
 /* search box inside the navigation bar */
-.topNav input[type=text] {
+.topNav input[type=search] {
     padding: 20px;
     border: none;
     margin-right: 16px;
@@ -297,26 +451,6 @@ p{
   background-color: rgba(0,0,0,0.8);
 }
 
-/* Caption text */
-.text {
-  color: #f2f2f2;
-  font-size: 15px;
-  padding: 8px 12px;
-  position: absolute;
-  bottom: 8px;
-  width: 100%;
-  text-align: center;
-}
-
-/* Number text (1/4 etc) */
-.numbertext {
-  color: #f2f2f2;
-  font-size: 12px;
-  padding: 8px 12px;
-  position: absolute;
-  top: 0;
-}
-
 /* The dots/bullets/indicators */
 .dot {
   cursor: pointer;
@@ -371,6 +505,7 @@ p{
     margin-left: 30px;
     transition-duration: 0.4s;
     cursor: pointer;
+    margin-top: 30px;
 }
 
 .button1:hover {
@@ -383,22 +518,25 @@ p{
     height: 600px;
     display: flex;
     flex-direction: row;
-    justify-content: center;
 }
 
 .flexHomeContainer6{
     display: flex;
     padding: 5px;
-    width: 30%;
+    width: 50%;
     flex-direction: column;
+    justify-content: center;
+    margin-left: 100px;
 }
 
 .flexHomeContainer7{
     display: flex;
     padding: 5px;
-    width: 50%;
+    width: 90%;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
+    margin-right: 50px;
 }
 
 .flexHomeItem2{
@@ -411,6 +549,7 @@ p{
 .flexHomeContainer8{
     display: flex;
     width: 100%;
+    height: 760px;
     flex-direction: column;
     background-color:#6a00bc;
 }
@@ -418,9 +557,18 @@ p{
 .flexHomeContainer9{
     display: flex;
     flex-direction: row;
+    margin-left: 50px;
+}
+
+.flexHomeContainer10{
+    display: flex;
+    flex-direction: column;
+    width: 25%;
     align-items: center;
+    text-align: center;
     justify-content: center;
-    background-color:#6a00bc;
+    margin-right: 50px;
+    margin-bottom: 20px;
 }
 
 .rowItem {
@@ -461,7 +609,7 @@ p{
     text-decoration: none;
     display: inline-block;
     font-size: 16px;
-    margin: 15px 655px;
+    margin: 15px 685px;
     transition-duration: 0.4s;
     cursor: pointer;
     align-items: center;
@@ -516,6 +664,26 @@ p{
     color: white;
   }
 
+  .button5{
+    border: none;
+    border-radius: 12px;
+    color: rgb(255, 255, 255);
+    background-color: #ff0000;
+    padding: 17px 7px;
+    width: 200px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+  }
+
+  .button5:hover {
+    background-color: #008CBA;
+    color: white;
+  }
+
   .w3-button{
     border: none;
     border-radius: 12px;
@@ -535,14 +703,6 @@ p{
 
 /*Contact Page starts here..........................................................................................................................................................................................................................................................................................................................................................................................*/
 
-.flexContactContainer{
-        display: flex;
-        width: 100%;
-        flex-direction: row;
-        align-items: center;
-        justify-content: center;
-}
-
 .flexHeadingContainer{
     width: 40%;
     text-align: center;
@@ -556,8 +716,9 @@ p{
     max-width: 50%;
     flex-direction: column;
     align-items: left;
-    justify-content: left;
-    margin: 20px;
+    justify-content: center;
+    margin-left: 100px;
+    margin-right: 100px;
     float: left;
     font-family: 'Poppins', sans-serif;
 }
@@ -566,6 +727,7 @@ p{
     display: flex;
     flex-direction: row;
     height: 765px;
+    margin-top: 80px;
 }
 
 .flexContactContainer2{
@@ -587,7 +749,7 @@ p{
     display: flex;
     flex-direction: column;
     width: 50%;
-    margin: 50px;
+    margin: 100px;
 }
 
 .flexContactContainer5{
@@ -669,20 +831,19 @@ p{
     margin-bottom: 30px;
     padding: 15px;
     border-radius: 10px;
-    border-color: #969696;
+    border: none;
 }
 
 .flexFormItem2{
     display: flex;
     width: 80%;
-    background-color: #ffffff;
     margin-top: 50px;
     margin-left: 50px;
     margin-right: 50px;
     margin-bottom: 50px;
-    padding: 15px;
     border-radius: 10px;
     justify-content: flex-start;
+    border: none;
 }
 /*the form ends here*/
 
@@ -691,6 +852,7 @@ p{
 .flexHeaderContainer1{
     display: flex;
     width: 100%;
+    height: 345px;
     flex-direction: row;
     align-items: center;
     justify-content: center;
@@ -762,6 +924,7 @@ p{
 }
 
 .flexFlightItem1 img{
+    display: block;
     width: 350px;
     margin-left: 20px;
 }
@@ -785,13 +948,13 @@ p{
     margin-left: 30px;
 }
 
-.checked {
+.one {
     color: orange;
 }
 
 .vl {
     border-left: 3px solid #bbb;
-    height: 25px;
+    height: 50px;
     left: 20%;
     margin-left: 50px;
     padding: 10px;
@@ -807,49 +970,6 @@ p{
     margin-left: 10px;
 }
 
-.text2{
-    font-family: 'Poppins', sans-serif;
-    font-size: 10px;
-    color: #969696;
-    text-align: left;
-    letter-spacing: 0px;
-    margin-right: 20px;
-    padding-left: 2em;
-    padding-right: 2em;
-}
-
-.text3{
-    font-family: 'Poppins', sans-serif;
-    font-size: 10px;
-    color: #ffffff;
-    text-align: left;
-    letter-spacing: 0px;
-    margin-right: 20px;
-    padding-left: 2em;
-    padding-right: 2em;
-}
-
-.text4{
-    font-family: 'Poppins', sans-serif;
-    font-size: 16px;
-    color: #00ffff;
-    text-align: left;
-    letter-spacing: 0px;
-    margin-right: 20px;
-    padding-left: 2em;
-    padding-right: 2em;
-}
-
-.text5{
-    font-family: 'Poppins', sans-serif;
-    font-size: 16px;
-    color: #969696;
-    text-align: left;
-    letter-spacing: 0px;
-    margin-right: 20px;
-    padding-left: 2em;
-    padding-right: 2em;
-}
 
 .flexFlightContainer4{
     display: flex;
@@ -908,6 +1028,134 @@ p{
     margin-left: 30px;
   }
 
+  /*Image fade effect..............................................................................................................................*/
+
+  .overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 350px;
+    height: 500px;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #008CBA;
+  }
+  
+  .flexFlightContainer2:hover .overlay {
+    opacity: 1;
+  }
+  
+  .text8 {
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+
+  /*Image fade effect..............................................................................................................................*/
+
+/*About page starts here..........................................................................................................................................................................................................................................................................................................................................................................................................................................................*/
+
+.flexAboutContainer1{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 600px;
+    margin-top: 70px;
+    background-color: #ffffff;
+}
+
+.flexAboutContainer2{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    margin-top: 100px;
+    margin-left: 50px;
+}
+
+.flexWorkContainer1{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 800px;
+    background-color: #6a00bc;
+    text-align: center;
+}
+
+.flexWorkContainer2{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 500px;
+    text-align: center;
+}
+
+.flexWorkContainer3{
+    display: flex;
+    flex-direction: column;
+    text-align: flex-start;
+    margin-top: 30px;
+}
+
+.flexNumberContainer{
+    display: flex;
+    flex-direction: row;
+    width: 80px;
+    height: 80px;
+    text-align: center;
+    border-radius: 50%;
+    margin-left: 60px;
+    background-color: #6a00bc;
+}
+
+/*Cart page starts here..........................................................................................................................................................................................................................................................................................................................................................................................................................................................*/
+.flexCartContainer1 {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        height: 800px;
+        background-color: #6a00bc;
+        text-align: center;
+}
+
+.flexCartContainer2 {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    height: 700px;
+    text-align: center;
+}
+
+.flexCartContainer3 {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    height: 700px;
+    text-align: center;
+}
+
+.flexCartContainer4 {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 50%;
+    text-align: left;
+}
+
+.flexDisclaimerContainer {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 50%;
+}
+
 /*Footer starts here..............................................................................................................................*/
 .flexFooterContainer{
     display: flex;
@@ -945,24 +1193,26 @@ p{
     align-items: left;
     justify-content: left;
     margin: 20px;
+    margin-left: 200px;
+    position: relative;
 }
 
-.flexFooterContainer3{
+.flexFooterContainer4{
     display: flex;
     flex: auto;
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    margin-right: 30px;
+    margin-right: 200px;
 }
 
     .flexFooterItem2 img{
         flex: 25%;
         width: 77px;
-        padding: 10px;
+        padding-right: 10px;
     }
 
-.flexFooterContainer4{
+.flexFooterContainer5{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
