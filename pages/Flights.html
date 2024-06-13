@@ -1,459 +1,440 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-
     <meta charset="UTF-8">
-    <meta http-equiv="X-UX-Compatible" content="IE-edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/> 
-    <meta name="keyword" content="HTML, CSS, Template, Bootstrap">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keyword" content="HTML, CSS, Template, Bootstrap, JavaScript">
     <meta name="author" content="Nastasya Brink 241346">
-
     <title>RED PLANET VENTURES</title>
-
-    <!--link bootstrap
-        link javascript
-        link Google Font files
-        link CSS-->
-
     <link rel="stylesheet" href="../css/main.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-    <link href="C:\Users\brink\Documents\GitHub\Nastasya_Brink_241346_DV100_Term1_Task3\assets\RedPlanetVentures\RedPlanetVentures\Assets\Fonts\porter_sans_block\porter-sans-inline-block-webfont.woff" rel="stylesheet">
-    <!-- icon library for the stars -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <link href="../assets/Fonts/porter_sans_block/porter-sans-inline-block-webfont.woff" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
+    <style>
+        .fa-star {
+            font-size: 24px;
+            cursor: pointer;
+        }
+        .checked {
+            color: orange;
+        }
+        .flexStarContainer1 {
+            display: flex;
+            align-items: center;
+        }
+        .vl {
+            border-left: 1px solid #000;
+            height: 50px;
+            margin: 0 10px;
+        }
+        .text7 {
+            margin-left: 10px;
+        }
+    </style>
 </head>
-
 <body>
     <div class="flexHeaderImageContainer2">
-    <nav>
-        <div class="topNav">
-
-            <a href="../index.html"><img src="../assets/RedPlanetVentures/RedPlanetVentures/Assets/Images/logo.png" width="135px"></a>
-    
-            <div class="topNavRight">
-                <a class="active" href="../index.html">Home</a>
-                <a href="About_Us.html">About Us</a>
-                <a href="Contact_Us.html">Contact Us</a>
-                <a href="Flights.html">Flights</a>
-                <a href="cart.html">Cart</a>
-                <input type="search" placeholder="Search.."
-                onsearch="myFunction()">
+        <nav>
+            <div class="topNav">
+                <a href="../index.html" class="logo-link"><img src="../assets/RedPlanetVentures/RedPlanetVentures/Assets/Images/logo.png" width="135" alt="Red Planet Ventures Logo"></a>
+                <div class="topNavCenter">
+                    <a href="../index.html">Home</a>
+                    <a href="About_Us.html">About Us</a>
+                    <a href="Contact_Us.html">Contact Us</a>
+                    <a href="Flights.html">Flights</a>
+                    <a href="Bookings.html">Bookings</a>
+                </div>
+                <div class="topNavRight">
+                    <input type="search" id="searchInput" placeholder="Search.." onkeyup="searchSections()">
+                    <button id="iconBtn" class="buttonicon">
+                        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAA8CAYAAAA6/NlyAAAACXBIWXMAAAsTAAALEwEAmpwYAAABmElEQVR4nO2ZMU7DQBBFHwXcABrgLERURDQUrCjIBSAtHAREjkBDjUIHOQUHIDTAERIpaCW7QZjYu2N7Z5knfSnyWtp5svVlx2AY0pwA8yL+d9Y4YAGsiiyBEf9EdpWztKuQzVL67BfZRcUxf252V3YJnAOnFWujHGVLspF2NWSzkXYNZNVLuwBZtdIuQladtBOQVSPtBGWTl3YtyCYvbRhGWhwD73+8ymmJ/0dlWEd4nsCwUnmrI7zKLGvpe0ATxq4worf0PIHbsNPSGmYi7WWPaMAkcKNHYBfYA6YtrNeJn70x48DN/KAl+y2s14mfvTGDwM1+Ir1eJwchwjuKhbcJ5FOh8BcRzBQKv8QITxQK38UIjxUKX8YIDxQKBzV0TFP3LRzc0KFN3afwBwLMFAlHNXRoU/cpHNXQoU3dp/AFAgwUvTxENXRoU0+Lof2wTy2st9rQMc/UXUekoWOeqbvOM4LcJiC0LjeSwocJCHVSWCUbwH0CUlV5KGYUZQu4Bl6LL/F9Sy6KWa6ATWlZwzAMwzAMg4Z8Ayc1JSZ9H8btAAAAAElFTkSuQmCC" width="25" alt="Cart Icon">
+                    </button>
+                </div>
             </div>
-           </div>
-    </nav>
+        </nav>
 
-    <header>
-        <div class="flexHeaderContainer1">
-            <h1 class="heading">BOOK A FLIGHT</h1>
+        <header>
+            <div class="flexHeaderFlightContainer1">
+                <h1 class="heading">BOOK A FLIGHT</h1>
             </div>
-
-        <div class="flexHeaderContainer2">
-            <div class="flexbox1">
-                <p>Filter</p>
-
+            <div class="flexHeaderFlightContainer2">
+                <div class="flexbox1">
+                    <p>Filter</p>
                     <div class="vl"></div>
-
-                <p> Showing 1–16 of 32 results</p>
+                    <p> Showing 1–16 of 32 results</p>
+                </div>
+                <div class="flexbox2">
+                    <p>Show</p>
+                    <input type="text" id="Show" onkeyup="myFunction()" placeholder="6">
+                    <p>Sort by</p>
+                    <input type="text" id="Sort_by" onkeyup="myFunction()" placeholder="Default">
+                </div>
             </div>
-            <div class="flexbox2">
-                <p>Show</p>
-                <input type="text" id="Show" onkeyup="myFunction()" placeholder="6">
-                <p>Sort by</p>
-                <input type="text" id="Sort_by" onkeyup="myFunction()" placeholder="Default">
+        </header>
+    </div>
+
+    <!-- Section 1 -->
+    <section id="section1">
+        <div class="flexFlightContainer1">
+            <div class="flexFlightContainer2">
+                <div class="flexFlightItem1"><img src="../assets/RedPlanetVentures/RedPlanetVentures/Assets/Images/flightMoon.png" alt="Moonlight Meander"></div>
+            </div>
+            <div class="flexFlightContainer3">
+                <h2 class="heading1">Moonlight Meander</h2>
+                <div class="text5">R 15,000.00</div>
+                <div class="flexStarContainer1">
+                    <span onclick="rate('section1', 1)" class="fa fa-star"></span>
+                    <span onclick="rate('section1', 2)" class="fa fa-star"></span>
+                    <span onclick="rate('section1', 3)" class="fa fa-star"></span>
+                    <span onclick="rate('section1', 4)" class="fa fa-star"></span>
+                    <span onclick="rate('section1', 5)" class="fa fa-star"></span>
+                    <div class="vl"></div>
+                    <div><p>43 Customer Reviews</p></div>
+                </div>
+                <div><p>Experience the ultimate lunar getaway with our "Moonlight Meander" package. Depart Earth's atmosphere aboard the "Celestial Cruiser" for a short but unforgettable journey to the Moon. Enjoy lunar walks, breathtaking views of Earthrise, and stargazing under the moon's serene glow. Immerse yourself in luxury accomodation amidst the tranquility of space.</p></div>
+                <div class="flexButtonContainer">
+                    <div class="w3-button">
+                        <button class="minus" aria-label="Decrease" onclick="decreaseValue('section1')">&minus;</button>
+                        <input type="number" class="input-box" id="quantity-section1" value="1" min="1" max="10">
+                        <button class="plus" aria-label="Increase" onclick="increaseValue('section1')">&plus;</button>
+                    </div>
+                    <a href="Bookings.html"><div class="button3">Book Now</div></a>
+                </div>
+                <hr class="solid" style="width: 97%">
+                <div class="flexInformationContainer">
+                    <div class="text2">
+                        SKU:<span style="padding-left: 53px;"></span> SS451<br>
+                        Shuttle:<span style="padding-left: 30px;"></span> The Voyager<br>
+                        Tags:<span style="padding-left: 46px;"></span> Moon, Commercial, Romantic<br>
+                        Date:<span style="padding-left: 47px;"></span> 5 August - 12 August
+                    </div>
+                </div>
             </div>
         </div>
-    </header>
-</div>
-
-    <section>
-        <section>
-                        <div class="flexFlightContainer1">
-                            <div class="flexFlightContainer2">
-                                <div class="flexFlightItem1"><img src="../assets/RedPlanetVentures/RedPlanetVentures/Assets/Images/flightMoon.png">
-                                </div>
-                                <div class="overlay">
-                                    <div class="text8">Hello World</div>
-                                  </div>
-                            </div>
-                        
-                            <div class="flexFlightContainer3">
-                                <h2>Moonlight Meander</h2>
-                                <div class="text5">R 15,000.00</div>
-                            
-                                
-                                <div class="flexStarContainer1">
-                                    <span onclick="gfg(1)" class="fa fa-star"></span>
-                                    <span onclick="gfg(2)"
-                                    class="fa fa-star"></span>
-                                    <span onclick="gfg(3)"
-                                    class="fa fa-star"></span>
-                                    <span onclick="gfg(4)"
-                                    class="fa fa-star"></span>
-                                    <span onclick="gfg(5)"
-                                    class="fa fa-star"></span>
-            
-                                    <!--Vertical Divider line-->
-                                        <div class="vl"></div>
-            
-                                        <div><p>43 Customer Reviews</p></div>
-                                    </div>
-            
-                                <div><p>Experience the ultimate lunar getaway with our "Moonlight Meander"
-                                package. Depart Earth's atmosphere aboard the "Celestial Cruiser" for a
-                                short but unforgettable journey to the Moon. Enjoy lunar walks,
-                                breathtaking views of Earth rise, and stargazing under the moon's serene
-                                glow. Immerse yourself in luxury accommodations amidst the tranquility
-                                of space.
-                                </p></div>
-                                
-                                <div class="flexButtonContainer">
-                                <button class="w3-button">- 1 +</button>
-                                <div class="button3">Book Now</div>
-                                </div>
-            
-                                <hr class="solid" style="width: 97%">
-            
-                                <div class="flexInformationContainer">
-                                    <div class="text2">
-                                    SKU SS001
-                                    <br>
-                                    Shuttle:The Voyager
-                                    <br>
-                                    Tags:Moon, Commercial, Romantic
-                                    <br>
-                                    Date: 5 August - 12 August</div>
-                                </div>
-                                </div>
-                            </div>
-            </section>
-
-            <section>
-                <div class="flexFlightContainer4">
-                    <div class="flexFlightContainer5">
-                        <div class="flexFlightItem1"><img src="../assets/RedPlanetVentures/RedPlanetVentures/Assets/Images/flighhtMars.png">
-                        </div>
-                    </div>
-                
-                    <div class="flexFlightContainer6">
-                        <h2 class="heading">The Classic Mars Experience</h2>
-                        <div class="text4">R 25,000.00 &nbsp; <s>R50,000.00</s></div>
-                    
-                        <div class="flexStarContainer1">
-                            <span onclick="gfg(1)" class="fa fa-star"></span>
-                            <span onclick="gfg(2)"
-                            class="fa fa-star"></span>
-                            <span onclick="gfg(3)"
-                            class="fa fa-star"></span>
-                            <span onclick="gfg(4)"
-                            class="fa fa-star"></span>
-                            <span onclick="gfg(5)"
-                            class="fa fa-star"></span>
-    
-                            <!--Vertical Divider line-->
-                                <div class="vl"></div>
-    
-                            <div class="text7">43 Customer Reviews</div>
-                        </div>
-    
-                        <div class="text7">Embark on a Mars vacation: red deserts, ancient relics, and towering
-                            canyons await. Enjoy low-gravity hiking, rover trips to Olympus Mons, and
-                            stargazing under Phobos and Deimos. Unforgettable adventures beckon
-                            on the rust-colored landscapes of the Red Planet.</div>
-    
-                        <div class="flexButtonContainer">
-                        <button class="w3-button2">- 1 +</button>
-                        <div class="button3">Book Now</div>
-                        </div>
-    
-                        <hr class="solid" style="width:97%">
-    
-                        <div class="flexInformationContainer">
-                            <div class="text3">
-                            SKU SS001
-                            <br>
-                            Shuttle:The Voyager
-                            <br>
-                            Tags:Moon, Commercial, Romantic
-                            <br>
-                            Date: 5 August - 12 August</div>
-                        </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <section>
-                        <div class="flexFlightContainer1">
-                            <div class="flexFlightContainer2">
-                                <div class="flexFlightItem1"><img src="../assets/RedPlanetVentures/RedPlanetVentures/Assets/Images/flightJupiter.png">
-                                </div>
-                            </div>
-                        
-                            <div class="flexFlightContainer3">
-                                <h2>The Giant’s Journey</h2>
-                                <div class="text5">R 65,000.00</div>
-                            
-                                <div class="flexStarContainer1">
-                                    <span onclick="gfg(1)" class="fa fa-star"></span>
-                                    <span onclick="gfg(2)"
-                                    class="fa fa-star"></span>
-                                    <span onclick="gfg(3)"
-                                    class="fa fa-star"></span>
-                                    <span onclick="gfg(4)"
-                                    class="fa fa-star"></span>
-                                    <span onclick="gfg(5)"
-                                    class="fa fa-star"></span>
-            
-                                    <!--Vertical Divider line-->
-                                        <div class="vl"></div>
-            
-                                        <div><p>43 Customer Reviews</p></div>
-                                    </div>
-            
-                                <div><p>Embark on a Jupiter voyage aboard the "Jupiter Odyssey." Witness its
-                                    majestic storms and swirling atmosphere. Dive into metallic hydrogen
-                                    oceans. Explore its moons, each a world unto itself. Engage in gravity
-                                    surfing, comet chasing, and space excursions. Experience cosmic wonder
-                                    in luxury, blending exploration with adventure.
-                                </p></div>
-            
-                                <div class="flexButtonContainer">
-                                <button class="w3-button">- 1 +</button>
-                                <div class="button3">Book Now</div>
-                                </div>
-            
-                                <hr class="solid" style="width:97%">
-            
-                                <div class="flexInformationContainer">
-                                    <div class="text2">
-                                    SKU SS606
-                                    <br>
-                                    Shuttle:The Odyssey
-                                    <br>
-                                    Tags:Jupiter, Luxury, Adventure
-                                    <br>
-                                    Date: 15 June - 30 July</div>
-                                </div>
-                                </div>
-                            </div>
-                        </div>
-            </section>
- 
-            <section>
-                <div class="flexFlightContainer4">
-                    <div class="flexFlightContainer5">
-                        <div class="flexFlightItem1"><img src="../assets/RedPlanetVentures/RedPlanetVentures/Assets/Images/flightSaturn.png">
-                        </div>
-                    </div>
-                
-                    <div class="flexFlightContainer6">
-                        <h2 class="heading">Ring Around a Saturn</h2>
-                        <div class="text4">R 25,000.00</div>
-                    
-                        <div class="flexStarContainer1">
-                            <span onclick="gfg(1)" class="fa fa-star"></span>
-                            <span onclick="gfg(2)"
-                            class="fa fa-star"></span>
-                            <span onclick="gfg(3)"
-                            class="fa fa-star"></span>
-                            <span onclick="gfg(4)"
-                            class="fa fa-star"></span>
-                            <span onclick="gfg(5)"
-                            class="fa fa-star"></span>
-    
-                            <!--Vertical Divider line-->
-                                <div class="vl"></div>
-    
-                            <div class="text7">43 Customer Reviews</div>
-                        </div>
-    
-                        <div class="text7">Embark on a thrilling voyage to Saturn aboard the "Saturn Explorer."
-                            Marvel at its iconic rings and turbulent storms. Explore its diverse moons,
-                            from icy Enceladus to mysterious Titan, with activities including rover
-                            expeditions and cave exploration. Experience the wonders of the cosmos
-                            amidst luxurious accommodations, where the thrill of discover</div>
-    
-                        <div class="flexButtonContainer">
-                        <button class="w3-button2">- 1 +</button>
-                        <div class="button3">Book Now</div>
-                        </div>
-    
-                        <hr class="solid" style="width:97%">
-    
-                        <div class="flexInformationContainer">
-                            <div class="text3">
-                            SKU SS001
-                            <br>
-                            Shuttle:The Voyager
-                            <br>
-                            Tags:Moon, Commercial, Romantic
-                            <br>
-                            Date: 5 August - 12 August</div>
-                        </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <section>
-                <div class="flexFlightContainer1">
-                    <div class="flexFlightContainer2">
-                        <div class="flexFlightItem1"><img src="../assets/RedPlanetVentures/RedPlanetVentures/Assets/Images/flightUranus.png">
-                        </div>
-                    </div>
-                
-                    <div class="flexFlightContainer3">
-                        <h2>Uranus Uncharted</h2>
-                        <div class="text5">R 50,000.00</div>
-                    
-                        <div class="flexStarContainer1">
-                            <span class="fa fa-star checked"></span>
-                            <span class="fa fa-star checked"></span>
-                            <span class="fa fa-star checked"></span>
-                            <span class="fa fa-star"></span>
-                            <span class="fa fa-star"></span>
-    
-                            <!--Vertical Divider line-->
-                                <div class="vl"></div>
-    
-                            <div><p>43 Customer Reviews</p></div>
-                        </div>
-    
-                        <div><p>Embark on a cosmic adventure to Uranus with our "Uranus Unveiled" tour.
-                            Explore its icy atmosphere and captivating moons. Experience thrilling
-                            zero-gravity excursions, witness mesmerizing auroras, and immerse
-                            yourself in celestial photography workshops. With luxury
-                            accommodations and expert guides, discover the wonders of Uranus in a
-                            journey of a lifetime.
-                        </p></div>
-    
-                        <div class="flexButtonContainer">
-                        <button class="w3-button">- 1 +</button>
-                        <div class="button3">Book Now</div>
-                        </div>
-    
-                        <hr class="solid" style="width:97%">
-    
-                        <div class="flexInformationContainer">
-                            <div class="text2">
-                            SKU SS001
-                            <br>
-                            Shuttle:The Voyager
-                            <br>
-                            Tags:Moon, Commercial, Romantic
-                            <br>
-                            Date: 5 August - 12 August</div>
-                        </div>
-                        </div>
-                    </div>
-                </div>
     </section>
-   
-    <section>
+
+    <!-- Section 2 -->
+    <section id="section2">
         <div class="flexFlightContainer4">
             <div class="flexFlightContainer5">
-                <div class="flexFlightItem1"><img src="../assets/RedPlanetVentures/RedPlanetVentures/Assets/Images/flightNeptune.png">
-                </div>
+                <div class="flexFlightItem1"><img src="../assets/RedPlanetVentures/RedPlanetVentures/Assets/Images/flighhtMars.png" alt="The Classic Mars Experience"></div>
             </div>
-        
             <div class="flexFlightContainer6">
-                <h2 class="heading">Neptune’s Cosmic Dive</h2>
-                <div class="text4">R 45,000.00</div>
-            
+                <h2 class="heading2">The Classic Mars Experience</h2>
+                <div class="text4">R 25,000.00 &nbsp; <s>R50,000.00</s></div>
                 <div class="flexStarContainer1">
-                    <span onclick="gfg(1)" class="fa fa-star"></span>
-                    <span onclick="gfg(1)"
-                    class="fa fa-star"></span>
-                    <span onclick="gfg(1)"
-                    class="fa fa-star"></span>
-                    <span onclick="gfg(1)"
-                    class="fa fa-star"></span>
-                    <span onclick="gfg(1)"
-                    class="fa fa-star"></span>
-
-                    <!--Vertical Divider line-->
-                        <div class="vl"></div>
-
-                    <div class="text7">43 Customer Reviews</div>
+                    <span onclick="rate('section2', 1)" class="fa fa-star"></span>
+                    <span onclick="rate('section2', 2)" class="fa fa-star"></span>
+                    <span onclick="rate('section2', 3)" class="fa fa-star"></span>
+                    <span onclick="rate('section2', 4)" class="fa fa-star"></span>
+                    <span onclick="rate('section2', 5)" class="fa fa-star"></span>
+                    <div class="vl"></div>
+                    <div class="text7">36 Customer Reviews</div>
                 </div>
-
-                <div class="text7">Embark on a voyage to Neptune aboard the "Neptune Voyager." Witness
-                    surreal vistas of swirling clouds and rings. Experience weightlessness and
-                    explore frigid oceans. Engage in thrilling spacewalks, observe celestial
-                    phenomena, and savor gourmet space cuisine. An unforgettable
-                    adventure awaits, blending luxury with cosmic exploration.</div>
-
+                <div class="text7">Embark on a Mars vacation: red deserts, ancient relics, and towering canyons await. Enjoy low-gravity hiking, rover trips to Olympus Mons, and stargazing under Phobos and Deimos. Unforgettable adventures beckon on the rust-colored landscapes of the red Planet.</div>
                 <div class="flexButtonContainer">
-                <button class="w3-button2">- 1 +</button>
-                <div class="button3">Book Now</div>
+                    <div class="w3-button2">
+                        <button class="minus2" aria-label="Decrease" onclick="decreaseValue('section2')">&minus;</button>
+                        <input type="number" class="input-box" id="quantity-section2" value="1" min="1" max="10">
+                        <button class="plus2" aria-label="Increase" onclick="increaseValue('section2')">&plus;</button>
+                    </div>
+                    <a href="Bookings.html"><div class="button3">Book Now</div></a>
                 </div>
-
-                <hr class="solid" style="width:97%">
-
+                <hr class="solid" style="width: 97%">
                 <div class="flexInformationContainer">
                     <div class="text3">
-                    SKU SS001
-                    <br>
-                    Shuttle:The Voyager
-                    <br>
-                    Tags:Moon, Commercial, Romantic
-                    <br>
-                    Date: 5 August - 12 August</div>
-                </div>
+                        SKU:<span style="padding-left: 53px;"></span>  SS001<br>
+                        Shuttle:<span style="padding-left: 30px;"></span> The Opulence<br>
+                        Tags:<span style="padding-left: 46px;"></span>  Mars, Luxury, Sale<br>
+                        Date:<span style="padding-left: 47px;"></span>  16 June - 19 July
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-    </section>
-
-    <footer>
-        <div class="flexFooterContainer">
-            <div class="flexFooterContainer1">
-                <div class="flexFooterItem1"><img src="../assets/RedPlanetVentures/RedPlanetVentures/Assets/Images/logo.png"></div>
-                    <br>
-                <p>Offering unforgettable trips to
-                explore planets in our solar
-                system. </p>
+    <!-- Section 3 -->
+    <section id="section3">
+        <div class="flexFlightContainer1">
+            <div class="flexFlightContainer2">
+                <div class="flexFlightItem1"><img src="../assets/RedPlanetVentures/RedPlanetVentures/Assets/Images/flightJupiter.png" alt="The Giant’s Journey"></div>
             </div>
-    
-            <div class="flexFooterContainer2">
-                <h4 class="heading">Company</h4>
-                <a href="../index.html" class="btn btn-success">Home</a>
-                <a href="../pages/About_Us.html" class="btn btn-success">About Us</a>
-                <a href="../pages/Contact_Us.html" class="btn btn-success">Contact Us</a>
-                <a href="../pages/Flights.html" class="btn btn-success">Flights</a>
-                <a href="../pages/cart.html" class="btn btn-success">Cart</a>
-            </div>
-    
-            <div class="flexFooterContainer3">
-                <h4 class="heading">Social Media links</h4>
-                <div class="flexFooterContainer4">
-                    <div class="flexFooterItem2"><img src="../assets/RedPlanetVentures/RedPlanetVentures/Assets/Images/smFacebook.png"></div>
-    
-                    <div class="flexFooterItem2"><img src="../assets/RedPlanetVentures/RedPlanetVentures/Assets/Images/smInstagram.png"></div>
-    
-                    <div class="flexFooterItem2"><img src="../assets/RedPlanetVentures/RedPlanetVentures/Assets/Images/smTicktock.png"></div>
-    
-                    <div class="flexFooterItem2"><img src="../assets/RedPlanetVentures/RedPlanetVentures/Assets/Images/smX.png"></div>
+            <div class="flexFlightContainer3">
+                <h2 class="heading1">The Giant’s Journey</h2>
+                <div class="text5">R 65,000.00</div>
+                <div class="flexStarContainer1">
+                    <span onclick="rate('section3', 1)" class="fa fa-star"></span>
+                    <span onclick="rate('section3', 2)" class="fa fa-star"></span>
+                    <span onclick="rate('section3', 3)" class="fa fa-star"></span>
+                    <span onclick="rate('section3', 4)" class="fa fa-star"></span>
+                    <span onclick="rate('section3', 5)" class="fa fa-star"></span>
+                    <div class="vl"></div>
+                    <div><p>48 Customer Reviews</p></div>
+                </div>
+                <div><p>Embark on a Jupiter voyage aboard the "Jupiter Odyssey." Witness its majestic storms and swirling atmosphere. Dive into metallic hydrogen oceans. Explore its moons, each a worlds unto itself. Engage in gravity surfing, comet chasing, and space excursions. Experience cosmic wonder in luxury, blending exploration with adventure.</p></div>
+                <div class="flexButtonContainer">
+                    <div class="w3-button">
+                        <button class="minus" aria-label="Decrease" onclick="decreaseValue('section3')">&minus;</button>
+                        <input type="number" class="input-box" id="quantity-section3" value="1" min="1" max="10">
+                        <button class="plus" aria-label="Increase" onclick="increaseValue('section3')">&plus;</button>
+                    </div>
+                    <a href="Bookings.html"><div class="button3">Book Now</div></a>
+                </div>
+                <hr class="solid" style="width: 97%">
+                <div class="flexInformationContainer">
+                    <div class="text2">
+                        SKU:<span style="padding-left: 53px;"></span>  SS606<br>
+                        Shuttle:<span style="padding-left: 30px;"></span> The Odyssey<br>
+                        Tags:<span style="padding-left: 46px;"></span>  Jupiter, Luxury, Adventure<br>
+                        Date:<span style="padding-left: 47px;"></span>  15 June - 30 July
+                    </div>
                 </div>
             </div>
         </div>
-    
-            <hr class="solid" width="97%">
-            <div class="flexFooterContainer5">
-                <div class="flexFooterItem6">
-                    <div >All rights reserved @ Open Window 2024</div></div>
-                <div class="flexFooterItem7">
-                    <div>Terms & Conditions</div>
-                    <div>Privacy & Policy</div>
-                    </div></div>
-               
-    </footer>
+    </section>
 
-    <script src="js/script.js"></script>
+    <!-- Section 4 -->
+<section id="section4">
+    <div class="flexFlightContainer4">
+        <div class="flexFlightContainer5">
+            <div class="flexFlightItem1"><img src="../assets/RedPlanetVentures/RedPlanetVentures/Assets/Images/flightSaturn.png" alt="Saturn Serenity"></div>
+        </div>
+        <div class="flexFlightContainer6">
+            <h2 class="heading2">Ring Around a Saturn</h2>
+            <div class="text4">R 40,000.00</div>
+            <div class="flexStarContainer1">
+                <span onclick="rate('section4', 1)" class="fa fa-star"></span>
+                <span onclick="rate('section4', 2)" class="fa fa-star"></span>
+                <span onclick="rate('section4', 3)" class="fa fa-star"></span>
+                <span onclick="rate('section4', 4)" class="fa fa-star"></span>
+                <span onclick="rate('section4', 5)" class="fa fa-star"></span>
+                <div class="vl"></div>
+                <div class="text7">16 Customer Reviews</div>
+            </div>
+            <div class="text7">Embark on a thrilling voyage to Saturn aboard the "Saturn Explorer." Marvel at its iconic rings and turbulent storms. Explore its diverse moons, from icy Enceladus to mysterious Titan, with activities including rover expeditions and cave exploration. Experience the wonders of the cosmos amidst luxurious accommodations, where the thrill of discovery intertwines seamlessly with the excitement of adventure.</div>
+            <div class="flexButtonContainer">
+                <div class="w3-button2">
+                    <button class="minus2" aria-label="Decrease" onclick="decreaseValue('section4')">&minus;</button>
+                    <input type="number" class="input-box" id="quantity-section4" value="1" min="1" max="10">
+                    <button class="plus2" aria-label="Increase" onclick="increaseValue('section4')">&plus;</button>
+                </div>
+                <a href="Bookings.html"><div class="button3">Book Now</div></a>
+            </div>
+            <hr class="solid" style="width: 97%">
+            <div class="flexInformationContainer">
+                <div class="text3">
+                    SKU:<span style="padding-left: 53px;"></span>  SS333<br>
+                    Shuttle:<span style="padding-left: 30px;"></span> The Explorer<br>
+                    Tags:<span style="padding-left: 46px;"></span>  Saturn, Luxury, Adventure<br>
+                    Date:<span style="padding-left: 47px;"></span>  4 April - 28 March
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Section 5 -->
+<section id="section5">
+    <div class="flexFlightContainer1">
+        <div class="flexFlightContainer2">
+            <div class="flexFlightItem1"><img src="../assets/RedPlanetVentures/RedPlanetVentures/Assets/Images/flightUranus.png" alt="Uranus Unveiled"></div>
+        </div>
+        <div class="flexFlightContainer3">
+            <h2 class="heading1">Uranus Uncharted</h2>
+            <div class="text5">R 50,000.00 </div>
+            <div class="flexStarContainer1">
+                <span onclick="rate('section6', 1)" class="fa fa-star"></span>
+                <span onclick="rate('section6', 2)" class="fa fa-star"></span>
+                <span onclick="rate('section6', 3)" class="fa fa-star"></span>
+                <span onclick="rate('section6', 4)" class="fa fa-star"></span>
+                <span onclick="rate('section6', 5)" class="fa fa-star"></span>
+                <div class="vl"></div>
+                <div><p>12 Customer Reviews</p></div>
+            </div>
+            <div><p>Embark on a cosmic adventure to Uranus with our "Uranus Unveiled" tour. Explore its icy atmosphere and captivating moons. Experience thrilling zero-gravity excursions, witness mesmerizing auroras, and immerse yourself in celestial photography workshops. With luxury accommodations and expert guides, discover the wonders of Uranus in a journey of a lifetime.</p></div>
+            <div class="flexButtonContainer">
+                <div class="w3-button">
+                    <button class="minus" aria-label="Decrease" onclick="decreaseValue('section6')">&minus;</button>
+                    <input type="number" class="input-box" id="quantity-section6" value="1" min="1" max="10">
+                    <button class="plus" aria-label="Increase" onclick="increaseValue('section6')">&plus;</button>
+                </div>
+                <a href="Bookings.html"><div class="button3">Book Now</div></a>
+            </div>
+            <hr class="solid" style="width: 97%">
+            <div class="flexInformationContainer">
+                <div class="text2">
+                    SKU:<span style="padding-left: 53px;"></span>  SS735<br>
+                    Shuttle:<span style="padding-left: 30px;"></span> The Endeavor<br>
+                    Tags:<span style="padding-left: 46px;"></span>  Uranus, Workshop, Adventure<br>
+                    Date:<span style="padding-left: 47px;"></span>  16 May - 19 July
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Section 6 -->
+<section id="section6">
+    <div class="flexFlightContainer4">
+        <div class="flexFlightContainer5">
+            <div class="flexFlightItem1"><img src="../assets/RedPlanetVentures/RedPlanetVentures/Assets/Images/flightNeptune.png" alt="Neptune Odyssey"></div>
+        </div>
+        <div class="flexFlightContainer6">
+            <h2 class="heading2">Neptune Odyssey</h2>
+            <div class="text4">R 85,000.00</div>
+            <div class="flexStarContainer1">
+                <span onclick="rate('section5', 1)" class="fa fa-star"></span>
+                <span onclick="rate('section5', 2)" class="fa fa-star"></span>
+                <span onclick="rate('section5', 3)" class="fa fa-star"></span>
+                <span onclick="rate('section5', 4)" class="fa fa-star"></span>
+                <span onclick="rate('section5', 5)" class="fa fa-star"></span>
+                <div class="vl"></div>
+                <div class="text7">24 Customer Reviews</div>
+            </div>
+            <div class="text7">Embark on a voyage to Neptune aboard the "Neptune Voyager." Witness surreal vistas of swirling clouds and rings. Experience weightlessness and explore frigid oceans. Engage in thrilling spacewalks, observe celestial phenomena, and savor gourmet space cuisine. An unforgettable adventure awaits, blending luxury with cosmic exploration.</div>
+            <div class="flexButtonContainer">
+                <div class="w3-button2">
+                    <button class="minus2" aria-label="Decrease" onclick="decreaseValue('section5')">&minus;</button>
+                    <input type="number" class="input-box" id="quantity-section5" value="1" min="1" max="10">
+                    <button class="plus2" aria-label="Increase" onclick="increaseValue('section5')">&plus;</button>
+                </div>
+                <a href="Bookings.html"><div class="button3">Book Now</div></a>
+            </div>
+            <hr class="solid" style="width: 97%">
+            <div class="flexInformationContainer">
+                <div class="text3">
+                    SKU:<span style="padding-left: 53px;"></span>  SS405<br>
+                    Shuttle:<span style="padding-left: 30px;"></span> The Voyager<br>
+                    Tags:<span style="padding-left: 46px;"></span>  Neptune, Gourmet Experience<br>
+                    Date:<span style="padding-left: 47px;"></span>  4 April - 28 March
+                </div>
+            </div>
+            <button id="viewCartBtn" class="button6">View Cart</button>
+
+            <!-- Modal for View Cart -->
+            <div id="cartModal" class="modal">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <span id="closeCartModal" class="close">&times;</span>
+                        <h2>Your Cart</h2>
+                    </div>
+                    <div class="modal-body">
+                        <p>You have the following in your cart:
+                            <br>
+                            <br>
+                            TRIPS<span style="padding-left: 259px;"></span> NUMBER OF TRIPS <span style="padding-left: 367px;"></span>AMOUNT
+                            <br> 
+                            <br>
+                            MOONLIGHT MEANDER:<span style="padding-left: 120px;"></span> 1 <span style="padding-left: 501px;"></span>R 15,000.00
+                            <br> 
+                            <br>
+                            THE CLASSIC MARS EXPERIENCE:<span style="padding-left: 50px;"></span> 2 <span style="padding-left: 499px;"></span>R 50,000.00
+                            <br>
+                            <br> 
+                            NEPTUNE ODYSSEY:<span style="padding-left: 150px;"></span> 1 <span style="padding-left: 500px;"></span>R 85,000.00
+                        </p>
+                        
+                    </div>
+                    <div class="modal-footer">
+                        <h3>GRAND TOTAL:<span style="padding-left: 100px;"></span>R 150,000.00</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer>
+    <div class="flexFooterContainer">
+        <div class="flexFooterContainer1">
+            <div class="flexFooterItem1"><img src="../assets/RedPlanetVentures/RedPlanetVentures/Assets/Images/logo.png" alt="Logo"></div>
+            <br>
+            <p>Offering unforgettable trips to explore planets in our solar system.</p>
+        </div>
+        <div class="flexFooterContainer2">
+            <h4 class="heading">Company</h4>
+            <a href="../index.html">Home</a>
+            <a href="About_Us.html">About Us</a>
+            <a href="Contact_Us.html">Contact Us</a>
+            <a href="Flights.html">Flights</a>
+            <a href="Bookings.html">Bookings</a>
+        </div>
+        <div class="flexFooterContainer3">
+            <h4 class="heading">Social Media links</h4>
+            <div class="flexFooterContainer4">
+                <a href="https://www.facebook.com/theopenwindow/"><div class="flexFooterItem2"><img src="../assets/RedPlanetVentures/RedPlanetVentures/Assets/Images/smFacebook.png" alt="Facebook"></div></a>
+                <a href="https://www.instagram.com/openwindowinstitute/?hl=en"><div class="flexFooterItem2"><img src="../assets/RedPlanetVentures/RedPlanetVentures/Assets/Images/smInstagram.png" alt="Instagram"></div></a>
+                <a href="https://www.tiktok.com/@open_window_"><div class="flexFooterItem2"><img src="../assets/RedPlanetVentures/RedPlanetVentures/Assets/Images/smTicktock.png" alt="TikTok"></div></a>
+                <a href="https://twitter.com/open_window_?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" target="_blank"><div class="flexFooterItem2"><img src="../assets/RedPlanetVentures/RedPlanetVentures/Assets/Images/smX.png" alt="Twitter"></div></a>
+            </div>
+        </div>
+    </div>
+</footer>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-smHYkd4/l3Q4r5f3VjMN5tOPsA9GDNfX8Ys33o6DuA+LVz6t7mThIFcfQ06j6pM" crossorigin="anonymous"></script>
+
+<script>
+    // Model for icon in navbar
+// Get the modal
+var cartModal = document.getElementById("cartModal");
+
+// Get the button that opens the modal
+var iconBtn = document.getElementById("iconBtn");
+
+// Get the <span> element that closes the modal
+var closeCartModal = document.getElementById("closeCartModal");
+
+// When the user clicks the button, open the modal 
+iconBtn.onclick = function() {
+    cartModal.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+closeCartModal.onclick = function() {
+    cartModal.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == cartModal) {
+        cartModal.style.display = "none";
+    }
+}
+</script>
+
+<script>
+    // Get the modal
+    var cartModal = document.getElementById("cartModal");
+
+    // Get the button that opens the modal
+    var viewCartBtn = document.getElementById("viewCartBtn");
+
+    // Get the <span> element that closes the modal
+    var closeCartModal = document.getElementById("closeCartModal");
+
+    // When the user clicks the button, open the modal 
+    viewCartBtn.onclick = function() {
+        cartModal.style.display = "block";
+    }
+
+    // When the user clicks on <span> (x), close the modal
+    closeCartModal.onclick = function() {
+        cartModal.style.display = "none";
+    }
+
+    // When the user clicks anywhere outside of the modal, close it
+    window.onclick = function(event) {
+        if (event.target == cartModal) {
+            cartModal.style.display = "none";
+        }
+    }
+</script>
+
+<script src="../script.js"></script>
 </body>
 </html>
-

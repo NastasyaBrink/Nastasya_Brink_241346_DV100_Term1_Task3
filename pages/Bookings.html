@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="HTML, CSS, Template, Bootstrap, JavaScript">
+    <meta name="author" content="Nastasya Brink 241346">
+    <title>RED PLANET VENTURES</title>
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../assets/Fonts/porter_sans_block/porter-sans-inline-block-webfont.woff">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <div class="flexHeaderImageContainer2">
+        <nav>
+            <div class="topNav">
+                <a href="../index.html" class="logo-link"><img src="../assets/RedPlanetVentures/RedPlanetVentures/Assets/Images/logo.png" width="135" alt="Red Planet Ventures Logo"></a>
+                <div class="topNavCenter">
+                    <a href="../index.html">Home</a>
+                    <a href="About_Us.html">About Us</a>
+                    <a href="Contact_Us.html">Contact Us</a>
+                    <a href="Flights.html">Flights</a>
+                    <a href="Bookings.html">Bookings</a>
+                </div>
+                <div class="topNavRight">
+                    <input type="search" id="searchInput" placeholder="Search.." onkeyup="searchSections()">
+                    <button id="viewCartBtn" class="buttonicon">
+                        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAA8CAYAAAA6/NlyAAAACXBIWXMAAAsTAAALEwEAmpwYAAABmElEQVR4nO2ZMU7DQBBFHwXcABrgLERURDQUrCjIBSAtHAREjkBDjUIHOQUHIDTAERIpaCW7QZjYu2N7Z5knfSnyWtp5svVlx2AY0pwA8yL+d9Y4YAGsiiyBEf9EdpWztKuQzVL67BfZRcUxf252V3YJnAOnFWujHGVLspF2NWSzkXYNZNVLuwBZtdIuQladtBOQVSPtBGWTl3YtyCYvbRhGWhwD73+8ymmJ/0dlWEd4nsCwUnmrI7zKLGvpe0ATxq4worf0PIHbsNPSGmYi7WWPaMAkcKNHYBfYA6YtrNeJn70x48DN/KAl+y2s14mfvTGDwM1+Ir1eJwchwjuKhbcJ5FOh8BcRzBQKv8QITxQK38UIjxUKX8YIDxQKBzV0TFP3LRzc0KFN3afwBwLMFAlHNXRoU/cpHNXQoU3dp/AFAgwUvTxENXRoU0+Lof2wTy2st9rQMc/UXUekoWOeqbvOM4LcJiC0LjeSwocJCHVSWCUbwH0CUlV5KGYUZQu4Bl6LL/F9Sy6KWa6ATWlZwzAMwzAMg4Z8Ayc1JSZ9H8btAAAAAElFTkSuQmCC" width="25" alt="Cart Icon">
+                    </button>
+                </div>
+            </div>
+        </nav>
+
+        <header>
+            <div class="flexHeaderFlightContainer1">
+                <h1 class="heading">Bookings</h1>
+            </div>
+        </header>
+    </div>
+
+    <section>
+        <div class="flexCartContainer1">
+            <div class="flexCartContainer2">
+                <div class="flexCartContainer4">
+                    <div class="text1">WHY YOU SHOULD</div>
+                    <div class="text12">BOOK A FLIGHT WITH US</div>
+
+                    <p>Embark on the adventure of a lifetime with Red Planet Ventures! As a pioneer in interplanetary travel, we offer an unparalleled experience that transcends the boundaries of Earth. Our state-of-the-art spacecraft, combined with a dedicated team of space travel experts, ensures a safe, comfortable, and awe-inspiring journey. Join us at Red Planet Ventures and be among the first to discover new worlds, create unforgettable memories, and write your own chapter in the history of space exploration. Your adventure beyond the stars awaits!</p>
+                </div>
+                <div class="flexDisclaimerContainer">
+                    <div class="text1">OUR RULES AND REGULATIONS</div>
+                    <div class="text12">DISCLAIMER TO PASSENGER</div>
+                    <p>
+                        Thank you for choosing Red Planet Ventures for your interstellar travel experience. Please carefully read the following policy regarding flight cancellations and other important travel requirements:
+
+                        Cancellation Policy: All flight cancellations must be made at least 30 days in advance of the scheduled departure date. Cancellations made within this 30-day period will not be eligible for any refunds.
+
+                        By booking a flight with Red Planet Ventures, you acknowledge and agree to these terms. We appreciate your cooperation and understanding in helping us maintain a safe and efficient travel experience.
+
+                        Red Planet Ventures advises all passengers with heart disease, blood pressure, or asthma conditions to bring their necessary medications on their space trip.
+
+                        For any questions or further clarification, please contact our customer service team.
+
+                        Safe travels,
+                        Red Planet Ventures
+                    </p>
+                </div>
+            </div>
+
+            <div class="flexCartContainer3">
+                <form id="contact" action="submit_form.php" method="post">
+                    <h3 class="heading">BOOK A FLIGHT</h3>
+                  
+                    <div class="text6">Your Name</div>
+                    <fieldset class="flexFormItem1">
+                        <input id="userNameInput" placeholder="Your Name" type="text" tabindex="1" required>
+                    </fieldset>
+                
+                    <div class="text6">Enter your ID</div>
+                    <fieldset class="flexFormItem3">
+                        <input placeholder="0000000000000" type="text" required>
+                    </fieldset>
+            
+                    <!-- Radio buttons -->
+                    <div class="text6">Select your Gender</div>
+                    <fieldset class="flexFormItem4">
+                        <div class="radio-buttons">
+                            <span>Male</span>
+                            <input type="radio" name="gender" value="male">
+                
+                            <span>Female</span>
+                            <input type="radio" name="gender" value="female">
+                
+                            <span>Other</span>
+                            <input type="radio" name="gender" value="Other">
+                        </div>
+                    </fieldset>
+            
+                    <!-- Checkboxes -->
+                    <div class="text6">Tick the Boxes if you have any of these Medical Conditions</div>
+                    <fieldset class="flexFormItem4">
+                        <div class="checkboxes">
+                            <span>Heart Disease</span>
+                            <input class="medical-condition" type="checkbox" name="condition[]" value="heart_disease">
+                
+                            <span>Blood Pressure</span>
+                            <input class="medical-condition" type="checkbox" name="condition[]" value="blood_pressure">
+
+                            <span>Asthma</span>
+                            <input class="medical-condition" type="checkbox" name="condition[]" value="asthma">
+                        </div>
+                    </fieldset>
+            
+                    <!-- Dropdown select menu -->
+                    <div class="text6">Choose a Flight</div>
+                    <fieldset class="flexFormItem3">
+                        <select name="flights">
+                            <option value="">Select A Flight</option>
+                            <option value="Moon">Moonlight Meander</option>
+                            <option value="Mars">The Classic Mars Experience</option>
+                            <option value="Jupiter">The Giant’s Journey</option>
+                            <option value="Saturn">Ring Around a Saturn</option>
+                            <option value="Uranus">Uranus Uncharted</option>
+                            <option value="Neptune">Neptune’s Cosmic Dive</option>
+                        </select>
+                    </fieldset>
+
+                    <fieldset class="flexFormItem2">
+                        <button type="submit" id="contactusSubmit" tabindex="5" class="button5">Submit</button>
+                    </fieldset> 
+                </form>
+            </div>
+        </div>  
+    </section>
+
+    <footer>
+        <div class="flexFooterContainer">
+            <div class="flexFooterContainer1">
+                <div class="flexFooterItem1"><img src="../assets/RedPlanetVentures/RedPlanetVentures/Assets/Images/logo.png" alt="Red Planet Ventures Logo"></div>
+                <br>
+                <p>Offering unforgettable trips to explore planets in our solar system.</p>
+            </div>
+    
+            <div class="flexFooterContainer2">
+                <h4 class="heading">Company</h4>
+                <a href="../index.html">Home</a>
+                <a href="../pages/About_Us.html">About Us</a>
+                <a href="../pages/Contact_Us.html">Contact Us</a>
+                <a href="../pages/Flights.html">Flights</a>
+                <a href="../pages/Bookings.html">Bookings</a>
+            </div>
+    
+            <div class="flexFooterContainer3">
+                <h4 class="heading">Social Media links</h4>
+                <div class="flexFooterContainer4">
+                    <a href="https://www.facebook.com/theopenwindow/"><div class="flexFooterItem2"><img src="../assets/RedPlanetVentures/RedPlanetVentures/Assets/Images/smFacebook.png" alt="Facebook"></div></a>
+    
+                    <a href="https://www.instagram.com/openwindowinstitute/?hl=en"><div class="flexFooterItem2"><img src="../assets/RedPlanetVentures/RedPlanetVentures/Assets/Images/smInstagram.png" alt="Instagram"></div></a>
+    
+                    <a href="https://www.tiktok.com/@open_window_"><div class="flexFooterItem2"><img src="../assets/RedPlanetVentures/RedPlanetVentures/Assets/Images/smTicktock.png" alt="TikTok"></div></a>
+    
+                    <a href="https://twitter.com/open_window_?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"><div class="flexFooterItem2"><img src="../assets/RedPlanetVentures/RedPlanetVentures/Assets/Images/smX.png" alt="Twitter"></div></a>
+                </div>
+            </div>
+        </div>
+    
+        <hr class="solid" width="97%">
+        <div class="flexFooterContainer5">
+            <div class="flexFooterItem6">
+                <div>All rights reserved @ Open Window 2024</div>
+            </div>
+            <div class="flexFooterItem7">
+                <div>Terms & Conditions</div>
+                <div>Privacy & Policy</div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+             // Function to handle form submission
+             document.getElementById('contact').addEventListener('submit', function(event) {
+                 event.preventDefault(); // Prevent the default form submission
+                 
+                 // Get the user's name from the form input
+                 let userName = document.getElementById('userNameInput').value;
+                 
+                 // Create and display the popup
+                 alert(`Welcome, ${userName}!`);
+             });
+         });
+     </script>
+    <script src="../script.js"></script>
+</body>
+</html>

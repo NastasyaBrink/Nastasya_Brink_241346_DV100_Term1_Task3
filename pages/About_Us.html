@@ -1,185 +1,226 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-
     <meta charset="UTF-8">
-    <meta http-equiv="X-UX-Compatible" content="IE-edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/> 
-    <meta name="keyword" content="HTML, CSS, Template, Bootstrap">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="HTML, CSS, Template, Bootstrap, JavaScript">
     <meta name="author" content="Nastasya Brink 241346">
-
     <title>RED PLANET VENTURES</title>
-
-    <!--link bootstrap
-        link javascript
-        link Google Font files
-        link CSS-->
-
     <link rel="stylesheet" href="../css/main.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
-    <link href="C:\Users\brink\Documents\GitHub\Nastasya_Brink_241346_DV100_Term1_Task3\assets\RedPlanetVentures\RedPlanetVentures\Assets\Fonts\porter_sans_block\porter-sans-inline-block-webfont.woff" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-    <!-- icon library for the stars -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../assets/Fonts/porter_sans_block/porter-sans-inline-block-webfont.woff">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
     <div class="flexHeaderImageContainer2">
-    <nav>
+      <nav>
         <div class="topNav">
-
-            <a href="../index.html"><img src="../assets/RedPlanetVentures/RedPlanetVentures/Assets/Images/logo.png" width="135px"></a>
-    
-            <div class="topNavRight">
-                <a class="active" href="../index.html">Home</a>
+            <a href="../index.html" class="logo-link"><img src="../assets/RedPlanetVentures/RedPlanetVentures/Assets/Images/logo.png" width="135" alt="Red Planet Ventures Logo"></a>
+            <div class="topNavCenter">
+                <a href="../index.html">Home</a>
                 <a href="About_Us.html">About Us</a>
                 <a href="Contact_Us.html">Contact Us</a>
                 <a href="Flights.html">Flights</a>
-                <a href="cart.html">Cart</a>
-                <input type="search" placeholder="Search.."
-                onsearch="myFunction()">
+                <a href="Bookings.html">Bookings</a>
             </div>
-           </div>
+            <div class="topNavRight">
+                <input type="search" id="searchInput" placeholder="Search.." onkeyup="searchSections()">
+                <button id="viewCartBtn" class="buttonicon">
+                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAA8CAYAAAA6/NlyAAAACXBIWXMAAAsTAAALEwEAmpwYAAABmElEQVR4nO2ZMU7DQBBFHwXcABrgLERURDQUrCjIBSAtHAREjkBDjUIHOQUHIDTAERIpaCW7QZjYu2N7Z5knfSnyWtp5svVlx2AY0pwA8yL+d9Y4YAGsiiyBEf9EdpWztKuQzVL67BfZRcUxf252V3YJnAOnFWujHGVLspF2NWSzkXYNZNVLuwBZtdIuQladtBOQVSPtBGWTl3YtyCYvbRhGWhwD73+8ymmJ/0dlWEd4nsCwUnmrI7zKLGvpe0ATxq4worf0PIHbsNPSGmYi7WWPaMAkcKNHYBfYA6YtrNeJn70x48DN/KAl+y2s14mfvTGDwM1+Ir1eJwchwjuKhbcJ5FOh8BcRzBQKv8QITxQK38UIjxUKX8YIDxQKBzV0TFP3LRzc0KFN3afwBwLMFAlHNXRoU/cpHNXQoU3dp/AFAgwUvTxENXRoU0+Lof2wTy2st9rQMc/UXUekoWOeqbvOM4LcJiC0LjeSwocJCHVSWCUbwH0CUlV5KGYUZQu4Bl6LL/F9Sy6KWa6ATWlZwzAMwzAMg4Z8Ayc1JSZ9H8btAAAAAElFTkSuQmCC" width="25" alt="Cart Icon">
+                </button>
+            </div>
+        </div>
     </nav>
 
-    <header>
-        <div class="flexHeaderContainer1">
-            <h1 class="heading">About Us</h1>
+          <!-- Modal for personalized greeting -->
+          <div id="welcomeModal" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <p id="welcomeMessage">Welcome!</p>
             </div>
-    </header>
-
-    <section>
-        <div class="flexAboutContainer1">
-            <div class="flexAboutContainer2">
-        <div class="container-lg my-5">
-            <div class="text14">responsive column widths</div>
-            <div class="row gy-3"> <!-- manually change gutter using g{d}-{n} -->
-              <div class="col-sm-4 col-lg-6">
-                <div class="p-5 bg-primary text-light">col 1</div>
-              </div>
-              <div class="col-sm-4 col-lg-3">
-                <div class="p-5 bg-primary text-light">col 2</div>
-              </div>
-              <div class="col-sm-4 col-lg-3">
-                <div class="p-5 bg-primary text-light">col 3</div>
-              </div>
-            </div>
-          </div>
         </div>
+
+        <header>
+            <div class="flexHeaderFlightContainer1">
+                <h1 class="heading">About Us</h1>
+            </div>
+        </header>
     </div>
+    <section>
+        <div class="flexContactContainer1">
+            <div class="flexParagraphContainer">
+                <div class="text1">MORE ABOUT</div>
+                <div class="text12">OUR HISTORY</div>
+                <p>
+                    Red Planet Ventures was established in the early 2020s as a pioneering space travel company, with the vision of making interplanetary exploration accessible to private individuals. The company quickly gained recognition for its cutting-edge technology and innovative approach to space tourism. By developing state-of-the-art spacecraft and ensuring rigorous safety standards, Red Planet Ventures launched its first successful mission to Mars in 2025, marking a significant milestone in commercial space travel. Over the years, the company has expanded its offerings, enabling thousands of passengers to experience the wonders of space, from lunar flybys to Martian surface explorations. Today, Red Planet Ventures is a leader in the industry, continually pushing the boundaries of human space exploration.
+                </p>
+            </div>
+
+            <div class="flexContactContainer2">
+                <div class="flexContactItem1">
+                    <img src="../assets/RedPlanetVentures/RedPlanetVentures/Assets/Images/contactImage.png" alt="Contact Image" width="610px" height="610px">
+                </div>
+            </div>
+        </div>
     </section>
 
     <section>
         <div class="flexWorkContainer1">
-        <!--bootstrap_grid-->
-          <div class="container-lg my-5">
-            <div class="text14">Our Founders</div>
-            <div class="row">
-              <div class="col">
-                <div class="p-5 bg-danger">
-                  <div class="flexWorkContainer2">
-                    <div class="flexNumberContainer">
-                      <div class="text15">1</div>
+            <!--bootstrap_grid-->
+            <div class="container-lg my-5">
+                <div class="text17">WHY CHOOSE RED PLANET VENTURES</div>
+                <div class="row">
+                    <div class="col">
+                        <div class="flexWorkContainer2">
+                            <div class="flexNumberContainer">
+                                <div class="text15">1</div>
+                            </div>
+                            <div class="flexWorkContainer3">
+                                <div class="flexWorkContainer4">
+                                    <div class="text11">Pioneering Space Exploration: </div>
+                                </div>
+                                <br>
+                                <div class="text16"> Red Planet Ventures offers an unparalleled opportunity for clients to be at the forefront of space exploration. By providing access to not just the Moon and Mars but also the distant gas giants like Jupiter, Saturn, Uranus, and Neptune, clients can experience the ultimate adventure, witnessing and contributing to humanity's reach beyond Earth.
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="flexWorkContainer3">
-                        <div class="text16">Paragraph...............................................................................................................................................................................................................................................................................................</div>
+                    <div class="col">
+                        <div class="flexWorkContainer2">
+                            <div class="flexNumberContainer">
+                                <div class="text15">2</div>
+                            </div>
+                            <div class="flexWorkContainer3">
+                                <div class="text11">Best Space Travel
+                                    <br>
+                                    Services:</div>
+                                <br>
+                                <div class="text16">Unlike other space travel providers that may focus on just one or two destinations, Red Planet Ventures covers a wide range of celestial bodies within our solar system. This comprehensive service allows clients to choose their desired destination based on their personal interests, whether it's the rugged landscapes of Mars or the majestic rings of Saturn.
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                  </div>
+                    <div class="col">
+                        <div class="flexWorkContainer2">
+                            <div class="flexNumberContainer">
+                                <div class="text15">3</div>
+                            </div>
+                            <div class="flexWorkContainer3">
+                                <div class="text11">Cutting-Edge Technology 
+                                <br> 
+                                and Safety: </div>
+                                <br>
+                                <div class="text16">Red Planet Ventures utilizes state-of-the-art spacecraft and employs rigorous safety protocols to ensure that all missions are conducted with the highest standards of technology and security. Clients can trust that their journey through space will be both thrilling and safe, thanks to the advanced engineering and meticulous planning behind every mission.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="flexWorkContainer2">
+                            <div class="flexNumberContainer">
+                                <div class="text15">4</div>
+                            </div>
+                            <div class="flexWorkContainer3">
+                                <div class="text11">Educational and Scientific Opportunities: </div>
+                                <br>
+                                <div class="text16">
+                                    Traveling with Red Planet Ventures offers clients the chance to participate in groundbreaking scientific research and educational experiences. Whether it's conducting experiments on the lunar surface or exploring the potential for life on Mars, clients can contribute to significant scientific discoveries while expanding their own knowledge and understanding of the universe.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-              </div>
-              <div class="col">
-                <div class="p-5 bg-danger">
-                  <div class="flexWorkContainer2">
-                    <div class="flexNumberContainer">
-                        <div class="text15">2</div>
-                    </div>
-                    <div class="flexWorkContainer3">
-                        <div class="text16">Paragraph...............................................................................................................................................................................................................................................................................................</div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col">
-                <div class="p-5 bg-danger">
-                  <div class="flexWorkContainer2">
-                    <div class="flexNumberContainer">
-                        <div class="text15">3</div>
-                    </div>
-                    <div class="flexWorkContainer3">
-                        <div class="text16">Paragraph...............................................................................................................................................................................................................................................................................................</div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col">
-                <div class="p-5 bg-danger"><div class="flexWorkContainer2">
-                  <div class="flexNumberContainer">
-                    <div class="text15">4</div>
-                  </div>
-                  <div class="flexWorkContainer3">
-                    <div class="text16">Paragraph...............................................................................................................................................................................................................................................................................................</div>
-                  </div>
-                </div>
-              </div>
-              </div>
             </div>
-          </div>
         </div>
-      </section>
+    </section>
 
     <section>
-        
+        <div class="flexWorkContainer1">
+            <!--bootstrap_grid-->
+            <div class="container-lg my-5">
+                <div class="text17">OUR FOUNDERS</div>
+                <div class="row">
+                    <div class="col">
+                        <div class="flexWorkContainer2">
+                            <div class="flexWorkItem1">
+                                <img src="../assets/RedPlanetVentures/RedPlanetVentures/Assets/Images/Founder2.jpg" alt="Founder Image">
+                            </div>
+                            <div class="flexWorkContainer3">
+                                <div class="text11">Moau-mu</div>
+                                <div class="text16">One of the founders of Red Planet Ventures is Mars Man Moau-mu. His mission was to educate Earthlings about the fate of their own planet if immediate action against climate change wasn't taken. His relentless enthusiasm and foresight have been instrumental in making Red Planet Ventures a trailblazer in interplanetary travel and scientific discovery.</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="flexWorkContainer2">
+                            <div class="flexWorkItem1">
+                                <img src="../assets/RedPlanetVentures/RedPlanetVentures/Assets/Images/Founder1.jpg" alt="Founder Image">
+                            </div>
+                            <div class="flexWorkContainer3">
+                                <div class="text11">Ju-alfjfh</div>
+                                <div class="text16">Ju-alfjfh, the head founder and primary financier of Red Planet Ventures, is a formidable force in the realm of space exploration. Hailing from the gas-rich environs of Jupiter, Ju-alfjfh leveraged his vast wealth amassed from gas mining operations to breathe life into the company's ambitious endeavors.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="flexWorkContainer2">
+                            <div class="flexWorkItem1">
+                                <img src="../assets/RedPlanetVentures/RedPlanetVentures/Assets/Images/Founder3.jpg" alt="Founder Image">
+                            </div>
+                            <div class="flexWorkContainer3">
+                                <div class="text11">Moony</div>
+                                <div class="text16">Moony, a founder of Red Planet Ventures from the Moon, brings unique extraterrestrial insights. Her deep space knowledge shapes the company's ambitious missions, driving human and alien collaboration to ensure clients experience the wonders of our solar system especially the beautiful craters of the moon.</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
 
     <footer>
         <div class="flexFooterContainer">
             <div class="flexFooterContainer1">
-                    <div class="flexFooterItem1"><img src="../assets/RedPlanetVentures/RedPlanetVentures/Assets/Images/logo.png"></div>
-                        <br>
-                    <p>Offering unforgettable trips to
-                    explore planets in our solar
-                    system. </p>
-                </div>
-    
+                <div class="flexFooterItem1"><img src="../assets/RedPlanetVentures/RedPlanetVentures/Assets/Images/logo.png" alt="Red Planet Ventures Logo"></div>
+                <br>
+                <p>Offering unforgettable trips to explore planets in our solar system.</p>
+            </div>
+
             <div class="flexFooterContainer2">
                 <h4 class="heading">Company</h4>
-                <a href="../index.html" class="btn btn-success">Home</a>
-                <a href="../pages/About_Us.html" class="btn btn-success">About Us</a>
-                <a href="../pages/Contact_Us.html" class="btn btn-success">Contact Us</a>
-                <a href="../pages/Flights.html" class="btn btn-success">Flights</a>
-                <a href="../pages/cart.html" class="btn btn-success">Cart</a>
+                <a href="../index.html">Home</a>
+                <a href="../pages/About_Us.html">About Us</a>
+                <a href="../pages/Contact_Us.html">Contact Us</a>
+                <a href="../pages/Flights.html">Flights</a>
+                <a href="../pages/Bookings.html">Bookings</a>
             </div>
-    
+
             <div class="flexFooterContainer3">
                 <h4 class="heading">Social Media links</h4>
                 <div class="flexFooterContainer4">
-                    <div class="flexFooterItem2"><img src="../assets/RedPlanetVentures/RedPlanetVentures/Assets/Images/smFacebook.png"></div>
-    
-                    <div class="flexFooterItem2"><img src="../assets/RedPlanetVentures/RedPlanetVentures/Assets/Images/smInstagram.png"></div>
-    
-                    <div class="flexFooterItem2"><img src="../assets/RedPlanetVentures/RedPlanetVentures/Assets/Images/smTicktock.png"></div>
-    
-                    <div class="flexFooterItem2"><img src="../assets/RedPlanetVentures/RedPlanetVentures/Assets/Images/smX.png"></div>
+                    <a href="https://www.facebook.com/theopenwindow/"><div class="flexFooterItem2"><img src="../assets/RedPlanetVentures/RedPlanetVentures/Assets/Images/smFacebook.png" alt="Facebook"></div></a>
+                    <a href="https://www.instagram.com/openwindowinstitute/?hl=en"><div class="flexFooterItem2"><img src="../assets/RedPlanetVentures/RedPlanetVentures/Assets/Images/smInstagram.png" alt="Instagram"></div></a>
+                    <a href="https://www.tiktok.com/@open_window_"><div class="flexFooterItem2"><img src="../assets/RedPlanetVentures/RedPlanetVentures/Assets/Images/smTicktock.png" alt="TikTok"></div></a>
+                    <a href="https://twitter.com/open_window_?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"><div class="flexFooterItem2"><img src="../assets/RedPlanetVentures/RedPlanetVentures/Assets/Images/smX.png" alt="Twitter"></div></a>
                 </div>
             </div>
         </div>
-    
-            <hr class="solid" width="97%">
-            <div class="flexFooterContainer5">
-                <div class="flexFooterItem6">
-                    <div >All rights reserved @ Open Window 2024</div></div>
-                <div class="flexFooterItem7">
-                    <div>Terms & Conditions</div>
-                    <div>Privacy & Policy</div>
-                    </div></div>
-               
+        <hr class="solid" width="97%">
+        <div class="flexFooterContainer5">
+            <div class="flexFooterItem6">All rights reserved @ Open Window 2024</div>
+            <div class="flexFooterItem7">
+                <div>Terms & Conditions</div>
+                <div>Privacy & Policy</div>
+            </div>
+        </div>
     </footer>
-
     
-    <script src="js/script.js"></script>
+    <script src="../script.js"></script>
 </body>
 </html>
-
-

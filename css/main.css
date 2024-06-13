@@ -5,21 +5,26 @@ body {
     width: 100%;
 }
 
+@font-face {
+    font-family: 'PorterSans';
+    src: url(../assets/RedPlanetVentures/RedPlanetVentures/Assets/Fonts/porter_sans_block/porter-sans-inline-block-webfont.woff) format("woff");
+}
+
 /*Headings/ text settings starts here............................................................................................................................................................................................*/  
-
-
 h1{
-    font-family: url(C:\Users\brink\Documents\GitHub\Nastasya_Brink_241346_DV100_Term1_Task3\assets\RedPlanetVentures\RedPlanetVentures\Assets\Fonts\porter_sans_block\porter-sans-inline-block-webfont.woff);
-    font-size: 25px;
-    color: #000000;
+    font-family: 'PorterSans';
+    font-size: 32px;
+    color: #ff0000;
     text-align: left;
     text-transform: uppercase;
     letter-spacing: 0px;
     margin-left: 30px;
+    margin-bottom: 20px;
 }
+
 
 h1.heading{
-    font-family: 'Porter-sans-inline-block-webfont', sans-serif;
+    font-family: 'PorterSans';
     font-size: 25px;
     color: #ffffff;
     text-align: left;
@@ -27,10 +32,21 @@ h1.heading{
     letter-spacing: 0px;
     margin-left: 30px;
 }
-
-h2{
-    font-family: 'Poppins', sans-serif;
+.text18{
+    font-family: 'Poppins', serif;
     font-size: 25px;
+    font-weight: 700;
+    color: #6a00bc;
+    text-align: left;
+    text-transform: uppercase;
+    letter-spacing: 0px;
+    margin-left: 35px;
+}
+
+h2.heading1 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 32px;
+    font-weight: 700;
     color: #000000;
     text-align: left;
     text-transform: uppercase;
@@ -38,14 +54,15 @@ h2{
     margin-left: 30px;
 }
 
-h2.heading{
+h2.heading2 {
     font-family: 'Poppins', sans-serif;
-    font-size: 25px;
+    font-size: 32px;
+    font-weight: 700;
     color: #ffffff;
     text-align: left;
     text-transform: uppercase;
     letter-spacing: 0px;
-    margin-left: 30px;
+    margin-left: 32px;
 }
 
 h3{
@@ -58,12 +75,13 @@ h3{
 }
 
 h3.heading{
-    font-family: 'Poppins', sans-serif;
-    font-size: 40px;
+    font-family: 'PorterSans';
+    font-size: 30px;
     color: #ffffff;
     text-align: left;
     text-transform: uppercase;
     letter-spacing: 0px;
+    margin-top: 30px;
     margin-left: 50px;
 }
 
@@ -79,6 +97,7 @@ h4{
 h4.heading{
     font-family: 'Poppins', sans-serif;
     font-size: 16px;
+    font-weight: 600;
     color: #000000;
     text-align: left;
     text-transform: uppercase;
@@ -94,6 +113,7 @@ h5{
 
 h6{
     color:#48aebf;
+    font-size: 14px;
     text-align: left;
     font-family: 'Poppins', sans-serif;
     font-style: normal;
@@ -101,15 +121,17 @@ h6{
 }
 
 h6.heading{
-    color:#00d9ff;
+    color:#48aebf;
     text-align: center;
     font-family: 'Poppins', sans-serif;
     font-style: normal;
+    margin-top: 50px;
 }
 
 .text1{
     color:#48aebf;
-    font-size: small;
+    font-weight: 500;
+    font-size: medium;
     text-align: left;
     font-family: 'Poppins', sans-serif;
     font-style: normal;
@@ -118,7 +140,7 @@ h6.heading{
 
 .text2{
     font-family: 'Poppins', sans-serif;
-    font-size: 10px;
+    font-size: 14px;
     color: #969696;
     text-align: left;
     letter-spacing: 0px;
@@ -129,7 +151,7 @@ h6.heading{
 
 .text3{
     font-family: 'Poppins', sans-serif;
-    font-size: 10px;
+    font-size: 14px;
     color: #ffffff;
     text-align: left;
     letter-spacing: 0px;
@@ -173,21 +195,20 @@ h6.heading{
 
 .text7{
     font-family: 'Poppins', sans-serif;
-    font-size: 14px;
+    font-size: 16px;
     color: #ffffff;
     text-align: left;
     letter-spacing: 0px;
     margin-top: 20px;
-    margin-right: 20px;
     margin-bottom: 20px;
-    padding-left: 2em;
-    padding-right: 2em;
+    padding-left: 20px;
+    padding-right: 50px;
 }
 
 .text10{
     font-family: 'Poppins', sans-serif;
-    font-size: 25px;
-    font-weight: 500;
+    font-size: 24px;
+    font-weight: 600;
     color: #ffffff;
     text-align: center;
     letter-spacing: 1px;
@@ -205,17 +226,17 @@ h6.heading{
 
 .text11{
     font-family: 'Poppins', sans-serif;
-    font-size: 40px;
+    font-size: 32px;
     font-weight: 600;
-    color: #ffffff;
+    color: #6a00bc;
     text-align: left;
     letter-spacing: 0px;
-    margin-left: 30px;
+    margin-left: 20px;
 }
 
 .text12{
     font-family: 'Poppins', sans-serif;
-    font-size: 40px;
+    font-size: 32px;
     font-weight: 600;
     color: #6a00bc;
     text-align: left;
@@ -225,7 +246,7 @@ h6.heading{
 
 .text13{
     font-family: 'Poppins', sans-serif;
-    font-size: 40px;
+    font-size: 35px;
     font-weight: 600;
     color: #ffffff;
     text-align: center;
@@ -240,20 +261,23 @@ h6.heading{
 
 .text15{
     color: rgb(255, 255, 255);
+    font-size: xx-large;
+    font-weight: 600;
     text-align: center;
     margin-left: 32px;
-    margin-top: 22px;
+    margin-top: 15px;
 }
 
 .text16{
     color: rgb(0, 0, 0);
     text-align: left;
+    margin-left: 20px;
+    margin-right: 20px; 
 }
-
 
 p{
     font-family: 'Poppins', sans-serif;
-    font-size: 14px;
+    font-size: 16px;
     color: #000000;
     text-align: left;
     letter-spacing: 0px;
@@ -271,6 +295,37 @@ p{
     margin-right: 20px;
     padding-left: 2em;
     padding-right: 2em;
+}
+
+.text17{
+    font-family: 'Poppins', sans-serif;
+    font-size: 32px;
+    font-weight: 600;
+    color: #ffffff;
+    text-align: center;
+    letter-spacing: 0px;
+}
+
+.text19{
+    font-family: 'Poppins', sans-serif;
+    font-size: 32px;
+    font-weight: 600;
+    color: #ffffff;
+    text-align: left;
+    letter-spacing: 0px;
+    margin-left: 30px;
+}
+
+.text20{
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    color: #ffffff;
+    text-align: left;
+    letter-spacing: 0px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding-left: 30px;
+    padding-right: 50px;
 }
 
 /*Headings/ text settings starts here............................................................................................................................................................................................*/ 
@@ -292,62 +347,154 @@ p{
 }
 
 /*navigation bar starts here............................................................................................................................................................................................*/  
-
-/*navigation bar*/  
-.topNav{ 
-    overflow: hidden;
+/* Navigation bar */
+.topNav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     background-color: #ffffffb1;
     margin-top: 10px;
     padding: 15px;
     border-radius: 50px;
 }
 
-/* links inside the navigation bar */
-.topNav a{
-    float: left;
-    display: block;
-    color: rgb(0, 0, 0);
+/* Centered links */
+.topNavCenter {
     text-align: center;
-    padding: 20px 48px;
+    flex-grow: 1;
+}
+
+.topNavCenter a {
+    display: inline-block;
+    padding: 20px 24px;
     text-decoration: none;
+    color: black;
     font-size: 17px;
 }
 
-.topNav img{
-    float: left;
+/* Logo */
+.logo-link {
+    text-decoration: none;
 }
 
-.topNavCenter {
-    float: center;
+.topNav img {
+    width: 230px;
+    height: auto;
+    margin-left: 30px;
 }
 
-/* Change the color of links on hover */
-.topNav a:hover {
-    background-color: #ddd;
-    color: black;
+/* Search box and cart icon */
+.topNavRight {
+    display: flex;
+    align-items: center;
 }
 
-/* "active" element to highlight the current page */
-.topNav a.active {
-    background-color: #d03252;
-    color: white;
-}
-
-.topNav a.active:hover {
-    background-color: #ddd;
-    color: black;
-}
-
-/* search box inside the navigation bar */
-.topNav input[type=search] {
-    padding: 20px;
-    border: none;
+#searchInput {
+    padding: 12px;
     margin-right: 16px;
     font-size: 17px;
-    font-family: 'Poppins', sans-serif;
+    border: none;
 }
 
-/*navigation bar ends here............................................................................................................................................................................................*/ 
+.topNavRight{
+    margin-right: 30px;
+}
+
+.buttonicon img {
+    width: 25px;
+    height: auto;
+    margin-left: 0px;
+}
+
+/* Hover effects */
+.topNav a:hover,
+.topNav input:hover {
+    background-color: #ddd;
+    color: #000000;
+}
+
+/* Active link */
+.topNav a.active {
+    color: #ff0000;
+    font-weight: bold;
+}
+
+/* Responsive adjustments */
+@media screen and (max-width: 768px) {
+    .topNav {
+        flex-wrap: wrap;
+    }
+    
+    .topNavCenter {
+        order: 1;
+        flex-basis: 100%;
+        text-align: center;
+    }
+    
+    .topNavRight {
+        order: 3;
+        margin-top: 10px;
+    }
+}
+/*navigation bar ends here............................................................................................................................................................................................*/
+
+/*carousel starts here............................................................................................................................................................................................*/
+.carousel-container {
+    position: relative;
+    max-width: 600px;
+    width: 100%;
+    margin: auto;
+    overflow: hidden;
+    border: none;
+    border-radius: 10px;
+    background-color: none;
+}
+
+.carousel {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.carousel-item {
+    min-width: 100%;
+    box-sizing: border-box;
+    display: none; /* Hide all items by default */
+}
+
+.carousel-item.active {
+    display: block; /* Show the active item */
+}
+
+.carousel-item img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.carousel-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 50%;
+    z-index: 1;
+}
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+}
+
+.carousel-button:hover {
+    background-color: rgba(0, 0, 0, 0.7);
+}
+/*carousel ends here............................................................................................................................................................................................*/
 
 .flexHomeContainer1{
     display: flex;
@@ -356,9 +503,8 @@ p{
     flex-direction: row;
     align-items: left;
     justify-content: left;
-    margin-top: 520px;
+    margin-top: 480px;
     margin-left: 100px;
-    font-family: 'Poppins', sans-serif;
 }
 
 .flexHomeItem1 img{
@@ -366,25 +512,12 @@ p{
     margin-left: 20px;
 }
 
-@font-face {
-    font-family: 'PorterSans';
-    src: url(../assets/RedPlanetVentures/RedPlanetVentures/Assets/Fonts/porter_sans_block/porter-sans-inline-block-webfont.woff) format(".woff");
-}
-
-.flexHomeContainerItem h1{
-        max-width: 607px;
-        text-align: center;
-        margin: auto;
-        font-size: 35px;
-        font-family: 'PorterSans';
-}
       
 .flexHomeContainerItem h2{
     max-width: 607px;
     text-align: center;
     margin: auto;
     font-size: 25px;
-    font-family: 'PorterSans';
 }
 
 .flexHomeContainer2{
@@ -410,74 +543,10 @@ p{
 }
 
 /*Slideshow starts here............................................................................................................................*/
-* {box-sizing:border-box}
-
-/* Slideshow container */
-.slideshow-container {
-  max-width: 1000px;
-  position: relative;
-  margin: auto;
+.flexHomeContainer3{
+    display: flex;
+    flex-direction: row;
 }
-
-/* Hide the images by default */
-.mySlides {
-  display: none;
-}
-
-/* Next & previous buttons */
-.prev, .next {
-  cursor: pointer;
-  position: absolute;
-  top: 50%;
-  width: auto;
-  margin-top: -22px;
-  padding: 16px;
-  color: white;
-  font-weight: bold;
-  font-size: 18px;
-  transition: 0.6s ease;
-  border-radius: 0 3px 3px 0;
-  user-select: none;
-}
-
-/* Position the "next button" to the right */
-.next {
-  right: 0;
-  border-radius: 3px 0 0 3px;
-}
-
-/* On hover, add a black background color with a little bit see-through */
-.prev:hover, .next:hover {
-  background-color: rgba(0,0,0,0.8);
-}
-
-/* The dots/bullets/indicators */
-.dot {
-  cursor: pointer;
-  height: 15px;
-  width: 15px;
-  margin: 0 2px;
-  background-color: #bbb;
-  border-radius: 50%;
-  display: inline-block;
-  transition: background-color 0.6s ease;
-}
-
-.active, .dot:hover {
-  background-color: #717171;
-}
-
-/* Fading animation */
-.fade {
-  animation-name: fade;
-  animation-duration: 1.5s;
-}
-
-@keyframes fade {
-  from {opacity: .4}
-  to {opacity: 1}
-}
-
 /*Slideshow end here............................................................................................................................*/
 
 .flexHomeContainer4{
@@ -501,6 +570,7 @@ p{
     text-decoration: none;
     display: inline-block;
     font-size: 16px;
+    font-weight: 600;
     margin: 4px 2px;
     margin-left: 30px;
     transition-duration: 0.4s;
@@ -535,8 +605,8 @@ p{
     width: 90%;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
-    margin-right: 50px;
+    align-items: end;
+    margin-right: 100px;
 }
 
 .flexHomeItem2{
@@ -549,7 +619,7 @@ p{
 .flexHomeContainer8{
     display: flex;
     width: 100%;
-    height: 760px;
+    height: 770px;
     flex-direction: column;
     background-color:#6a00bc;
 }
@@ -594,6 +664,7 @@ p{
 
 .flexButtonContainer{
     display: flex;
+    flex-direction: row;
     width: 100%;
     align-items: left;
     justify-content: left;
@@ -604,11 +675,12 @@ p{
     border-radius: 12px;
     color: rgb(255, 255, 255);
     background-color: #ff0000;
-    padding: 17px 7px;
+    padding: 17px 10px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
     font-size: 16px;
+    font-weight: 600;
     margin: 15px 685px;
     transition-duration: 0.4s;
     cursor: pointer;
@@ -626,12 +698,13 @@ p{
     border-radius: 12px;
     color: rgb(255, 255, 255);
     background-color: #ff0000;
-    padding: 17px 7px;
+    padding: 30px 7px;
     width: 200px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
     font-size: 16px;
+    font-weight: 600;
     margin: 4px 2px;
     transition-duration: 0.4s;
     cursor: pointer;
@@ -684,13 +757,13 @@ p{
     color: white;
   }
 
-  .w3-button{
+  .button6{
     border: none;
     border-radius: 12px;
     color: rgb(255, 255, 255);
-    background-color: #6a00bc;
-    padding: 20px;
-    width: 100px;
+    background-color: #cc0404;
+    padding: 17px 7px;
+    width: 200px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
@@ -698,9 +771,79 @@ p{
     margin: 4px 2px;
     transition-duration: 0.4s;
     cursor: pointer;
-    margin-left: 30px;
+    margin-left: 500px;
   }
 
+  .button6:hover {
+    background-color: #008CBA;
+    color: white;
+  }
+
+  .w3-button {
+    display: flex;
+    flex-direction: row;
+    border: none;
+    border-radius: 12px;
+    color: rgb(255, 255, 255);
+    background-color: #6a00bc;
+    width: 150px; /* Increased width to accommodate input box and buttons */
+    text-decoration: none;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    margin-left: 30px;
+    align-items: center; /* Align items in the center vertically */
+    justify-content: space-between; /* Add space between buttons and input */
+}
+
+.minus, .plus {
+    background-color: #6a00bc;
+    color: white;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+    border-radius: 12px; /* Ensure buttons have rounded corners */
+    padding: 10px; /* Add padding for better appearance */
+}
+
+.input-box {
+    width: 50px; /* Adjust width of the input box */
+    text-align: center;
+    font-size: 16px;
+}
+
+  .w3-button2{
+    display: flex;
+    flex-direction: row;
+    border: none;
+    border-radius: 12px;
+    color: rgb(255, 255, 255);
+    background-color: #48aebf;
+    width: 150px; /* Increased width to accommodate input box and buttons */
+    text-decoration: none;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    margin-left: 30px;
+    align-items: center; /* Align items in the center vertically */
+    justify-content: space-between; /* Add space between buttons and input */
+  }
+  
+  .minus2, .plus2 {
+    background-color: #48aebf;
+    color: white;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+    border-radius: 12px; /* Ensure buttons have rounded corners */
+    padding: 10px; /* Add padding for better appearance */
+}
+
+.input-box {
+    width: 50px; /* Adjust width of the input box */
+    text-align: center;
+    font-size: 16px;
+}
 /*Contact Page starts here..........................................................................................................................................................................................................................................................................................................................................................................................*/
 
 .flexHeadingContainer{
@@ -736,7 +879,7 @@ p{
 }
 
 .flexContactItem1{
-    margin-bottom: 50px;
+   display: flex;
 }
 /*...............................................................................................................................*/
 .flexContactContainer3{
@@ -750,6 +893,8 @@ p{
     flex-direction: column;
     width: 50%;
     margin: 100px;
+    margin-top: 60px;
+    margin-bottom: 50px;
 }
 
 .flexContactContainer5{
@@ -769,16 +914,24 @@ p{
     display: flex;
     flex-direction: column;
     width: 100%;
+    margin-top: 140px;
+}
+
+#map{
+    margin-left: 30px;
 }
 
 .flexContactContainer8{
     display: flex;
     flex-direction: row;
-    width: 100%
+    width: 100%;
+    margin-left: 30px;
 }
 
-.flexContactItem2{
-   margin: none;
+.flexContactItem2 img{
+        flex: 25%;
+        width: 110px;
+        padding-right: 10px;
 }
 
 @font-face{
@@ -845,11 +998,35 @@ p{
     justify-content: flex-start;
     border: none;
 }
+
+.flexFormItem3{
+    display: flex;
+    width: 80%;
+    background-color: #ffffff;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-bottom: 20px;
+    padding: 15px;
+    border-radius: 10px;
+    border: none;
+}
+
+.flexFormItem4{
+    display: flex;
+    width: 80%;
+    background-color: #ffffffb1;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    justify-content: flex-start;
+    border: none;
+}
 /*the form ends here*/
 
 /*Flight page starts here..........................................................................................................................................................................................................................................................................................................................................................................................................................................................*/
 
-.flexHeaderContainer1{
+.flexHeaderFlightContainer1{
     display: flex;
     width: 100%;
     height: 345px;
@@ -858,14 +1035,14 @@ p{
     justify-content: center;
 }
 
-.flexHeaderContainer2{
+.flexHeaderFlightContainer2{
     display: flex;
     width: 100%;
     flex-direction: row;
     align-items: center;
     justify-content: center;
     background-color: #6a00bc;
-    margin-bottom: 2px;
+    margin-top: 5px;
 }
 
 .flexbox1{
@@ -936,31 +1113,6 @@ p{
     flex-direction: column;
 }
 
-.flexStarContainer1{
-    display: flex;
-    width: 90%;
-    max-width: 90%;
-    flex-direction: row;
-    align-items: center;
-    justify-content: left;
-    margin-left: 20px;
-    float: right;
-    margin-left: 30px;
-}
-
-.one {
-    color: orange;
-}
-
-.vl {
-    border-left: 3px solid #bbb;
-    height: 50px;
-    left: 20%;
-    margin-left: 50px;
-    padding: 10px;
-    top: 0;
-}
-
 .flexInformationContainer{
     display: flex;
     width: 50%;
@@ -1011,23 +1163,6 @@ p{
     justify-content: left;
 }
 
-.w3-button2{
-    border: none;
-    border-radius: 12px;
-    color: rgb(255, 255, 255);
-    background-color: #48aebf;
-    padding: 20px;
-    width: 100px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    margin: 4px 2px;
-    transition-duration: 0.4s;
-    cursor: pointer;
-    margin-left: 30px;
-  }
-
   /*Image fade effect..............................................................................................................................*/
 
   .overlay {
@@ -1061,6 +1196,92 @@ p{
 
   /*Image fade effect..............................................................................................................................*/
 
+ /* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    -webkit-animation-name: fadeIn; /* Fade in the background */
+    -webkit-animation-duration: 0.4s;
+    animation-name: fadeIn;
+    animation-duration: 0.4s
+  }
+  
+  /* Modal Content */
+  .modal-content {
+    position: fixed;
+    bottom: 0;
+    background-color: #fefefe;
+    width: 100%;
+    -webkit-animation-name: slideIn;
+    -webkit-animation-duration: 0.4s;
+    animation-name: slideIn;
+    animation-duration: 0.4s
+  }
+  
+  /* The Close Button */
+  .close {
+    color: white;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  .modal-header {
+    padding: 2px 16px;
+    background-color: #ff0000;
+    color: white;
+  }
+  
+  .modal-body {padding: 2px 16px;}
+  
+  .modal-footer {
+    padding: 2px 16px;
+    background-color: #ff0000;
+    color: white;
+  }
+  
+  /* Add Animation */
+  @-webkit-keyframes slideIn {
+    from {bottom: -300px; opacity: 0} 
+    to {bottom: 0; opacity: 1}
+  }
+  
+  @keyframes slideIn {
+    from {bottom: -300px; opacity: 0}
+    to {bottom: 0; opacity: 1}
+  }
+  
+  @-webkit-keyframes fadeIn {
+    from {opacity: 0} 
+    to {opacity: 1}
+  }
+  
+  @keyframes fadeIn {
+    from {opacity: 0} 
+    to {opacity: 1}
+  }
+
+  .flexStarContainer1{
+    display: flex;
+    flex-direction: row;
+    margin-left: 30px;
+  }
+
 /*About page starts here..........................................................................................................................................................................................................................................................................................................................................................................................................................................................*/
 
 .flexAboutContainer1{
@@ -1068,7 +1289,6 @@ p{
     flex-direction: row;
     width: 100%;
     height: 600px;
-    margin-top: 70px;
     background-color: #ffffff;
 }
 
@@ -1076,8 +1296,19 @@ p{
     display: flex;
     flex-direction: row;
     width: 100%;
-    margin-top: 100px;
-    margin-left: 50px;
+  margin: 20px;
+}
+
+.flexAboutItem1{
+    display: flex;
+    flex-direction: row;
+}
+
+.flexAboutItem2{
+    display: flex;
+    flex-direction: row;
+    margin-left: 20px;
+    margin-right: 20px;
 }
 
 .flexWorkContainer1{
@@ -1089,12 +1320,27 @@ p{
     text-align: center;
 }
 
+.row1{
+    display: flex;
+    height: 400px;
+}
+
+
+.row2{
+     display: flex;
+     height: 750px;
+}
+
 .flexWorkContainer2{
     display: flex;
     flex-direction: column;
-    width: 100%;
-    height: 500px;
+    width: 80%;
+    height: 650px;
     text-align: center;
+    margin-top: 20px;
+    margin-left: 30px;
+    border-radius: 20px;
+    background-color: #ffffff;
 }
 
 .flexWorkContainer3{
@@ -1104,6 +1350,8 @@ p{
     margin-top: 30px;
 }
 
+
+
 .flexNumberContainer{
     display: flex;
     flex-direction: row;
@@ -1111,8 +1359,19 @@ p{
     height: 80px;
     text-align: center;
     border-radius: 50%;
-    margin-left: 60px;
+    margin-top: 30px;
+    margin-left: 100px;
     background-color: #6a00bc;
+}
+
+.flexWorkItem1 img{
+    display: flex;
+    flex-direction: row;
+    width: 320px;
+    margin-top: 30px;
+    margin-left: 30px;
+    margin-right: 30px;
+    border-radius: 20px;
 }
 
 /*Cart page starts here..........................................................................................................................................................................................................................................................................................................................................................................................................................................................*/
@@ -1120,8 +1379,8 @@ p{
         display: flex;
         flex-direction: row;
         width: 100%;
-        height: 800px;
-        background-color: #6a00bc;
+        height: 900px;
+        background-color: #ffffff;
         text-align: center;
 }
 
@@ -1131,6 +1390,7 @@ p{
     width: 50%;
     height: 700px;
     text-align: center;
+    margin: 50px;
 }
 
 .flexCartContainer3 {
@@ -1139,6 +1399,7 @@ p{
     width: 50%;
     height: 700px;
     text-align: center;
+    margin: 50px;
 }
 
 .flexCartContainer4 {
@@ -1154,9 +1415,33 @@ p{
     flex-direction: column;
     width: 100%;
     height: 50%;
+    margin-top: 95px;
 }
 
-/*Footer starts here..............................................................................................................................*/
+.flexCartContainer5 {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 900px;
+    background-color: #6a00bc;
+    text-align: center;
+}
+
+.flexCartContainer6 {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    height: 700px;
+    text-align: center;
+    margin: 50px;
+}
+
+ /*Cart..............................................................................................................................*/
+  
+
+   /*Cart ends here..............................................................................................................................*/
+
+/*Footer starts here......................................................................................................................................................................................................................................................................................................................................................................................................................................................*/
 .flexFooterContainer{
     display: flex;
     flex: 100%;
